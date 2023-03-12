@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>Stages & Deadlines | BHMUN</title>
+    <link rel = "stylesheet" type = "text/css" href = "/css/styles.css">
+    <link rel = "stylesheet" type = "text/css" href = "/css/application_overview.css">
+
+    <meta charset = "UTF-8">
+    <link rel = "icon" href = "/res/bhmun_material.png">
+    <link href = "https://fonts.googleapis.com/css?family=Comfortaa" rel = "stylesheet">
+    <link href = "https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel = "stylesheet">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src = "https://www.googletagmanager.com/gtag/js?id=UA-145106302-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push( arguments); }
+        gtag( 'js', new Date());
+
+        gtag( 'config', 'UA-145106302-1');
+    </script>
+</head>
+<body>
+
+<!-- Navbar Desktop -->
+<div class = "navBarDesktop" id = "navBarDesktop">
+    <!-- Navbar Light -->
+    <div class = "navBar navBarLight blurLight unselectable" id = "navBarLight">
+        <a class = "imgLink" style = "cursor: pointer;" href = "/">
+            <img src = "/res/bhmun_b.png" class = "imgIcon unselectable"/>
+        </a>
+
+        <div class = "buttons">
+            <ul>
+                <li class = "btHome button" onmouseover = "showHomeDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/">Home</a>
+                </li>
+                <li class = "btAbout button" onmouseover = "showAboutDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/about">About</a>
+                </li>
+                <li class = "btConference button" onmouseover = "showConferenceDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/conference">Conference</a>
+                </li>
+                <li class = "btCommittees button" onmouseover = "showCommitteesDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/committees">Committees</a>
+                </li>
+                <li class = "btRegistration button" onmouseover = "showRegistrationDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/applications_menu">Applications</a>
+                </li>
+                <li class = "btContact button" onmouseover = "showContactDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/contact">Contact</a>
+                </li>
+                <li class = "btDrive button" onmouseover = "showCloudDropdown()" onmouseout = "hideDropdowns()">
+                    <a class = "aBhmunDrive" href = "/drive">
+                        <img class = "bhmunDriveLogo" src = "/res/icons/cloud.png">
+                    </a>
+                </li>
+
+                <hr class = "underline" id = "underlineLight"/>
+            </ul>
+        </div>
+    </div>
+    <div class = "dropdownMenu dropdownMenuLight" id = "dropdownMenuLight">
+        <div class = "dropdownAbout dropdownContent" onmouseover = "showAboutDropdown()" onmouseout = "hideDropdowns()" id = "dropdownAboutLight">
+            <div class = "dropdownContentTop"></div>
+            <div class = "dropdownContentLinks">
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 0)" onmouseout = "resetUnderlineTopMargin()" href = "/about_bhmun">
+                    BHMUN History
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 1)" onmouseout = "resetUnderlineTopMargin()" href = "http://www.obl.bilkent.edu.tr/index.php/en/">
+                    Özel Bilkent High School
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 2)" onmouseout = "resetUnderlineTopMargin()" href = "/about_ankara">
+                    Bilkent & Ankara
+                </a>
+            </div>
+        </div>
+
+        <div class = "dropdownConference dropdownContent" onmouseover = "showConferenceDropdown()" onmouseout = "hideDropdowns()" id = "dropdownConferenceLight">
+            <div class = "dropdownContentTop"></div>
+            <div class = "dropdownContentLinks">
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 0)" onmouseout = "resetUnderlineTopMargin()" href = "/schedule">
+                    Schedule
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 1)" onmouseout = "resetUnderlineTopMargin()" href = "/organagram">
+                    Organagram
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 2)" onmouseout = "resetUnderlineTopMargin()" href = "/executive_team">
+                    Executive Team
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 3)" onmouseout = "resetUnderlineTopMargin()" href = "/rules_and_procedure">
+                    Harvard Procedures
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 4)" onmouseout = "resetUnderlineTopMargin()" href = "/bhmun_herald">
+                    BHMUN Herald
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 5)" onmouseout = "resetUnderlineTopMargin()" href = "/rules_and_regulations">
+                    Rules & Regulations
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 6)" onmouseout = "resetUnderlineTopMargin()" href = "/drive">
+                    BHMUN Drive
+                </a>
+            </div>
+        </div>
+
+        <div class = "dropdownRegistration dropdownContent"  onmouseover = "showRegistrationDropdown()" onmouseout = "hideDropdowns()" id = "dropdownRegistrationLight">
+            <div class = "dropdownContentTop"></div>
+            <div class = "dropdownContentLinks">
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 0)" onmouseout = "resetUnderlineTopMargin()" href = "/data_protection">
+                    Data Protection
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 1)" onmouseout = "resetUnderlineTopMargin()" href = "/application_overview">
+                    Application Overview
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 2)" onmouseout = "resetUnderlineTopMargin()" href = "/stages_and_deadlines">
+                    Stages & Deadlines
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Navbar Mobile -->
+<div class = "navBarMobile" id = "navBarMobile">
+    <div class = "mobileBar mobileBarLight blurLight" id = "mobileBarLight">
+        <div class = "mobileTitleAndIcon unselectable">
+            <img class = "imgIconMobile unselectable" src = "/res/bhmun_b.png"/>
+            <h1 class = "mobileTitle">BHMUN</h1>
+        </div>
+        <img class = "mobileMenu" src = "https://img.icons8.com/material-outlined/96/000000/menu.png" onclick="showMobileNavigation()">
+    </div>
+
+    <div class = "mobileNavigation blurLight" id = "mobileNavigation" style = "display: none">
+        <div class = "mobileTitleAndIcon unselectable">
+            <img class = "imgIconMobile unselectable" src = "/res/bhmun_b.png"/>
+            <h1 class = "mobileTitle">BHMUN</h1>
+        </div>
+        <img class = "mobileMenu" src = "https://img.icons8.com/material-rounded/24/000000/delete-sign.png" onclick="hideMobileNavigation()">
+
+        <div class = "mobileNavigationBox">
+            <a class = "mobileNavBarItem" href = "/"><img src = "/res/icons/home.png" class = "mobileNavbarIcon">Home</a>
+            <hr class = "mobileDivider"/>
+            <a class = "mobileNavBarItem" href = "/about"><img src = "/res/icons/about.png" class = "mobileNavbarIcon">About</a>
+            <hr class = "mobileDivider"/>
+            <a class = "mobileNavBarItem" href = "/conference"><img src = "/res/icons/conference.png" class = "mobileNavbarIcon">Conference</a>
+            <hr class = "mobileDivider"/>
+            <a class = "mobileNavBarItem" href = "/committees"><img src = "/res/icons/committees.png" class = "mobileNavbarIcon">Committees</a>
+            <hr class = "mobileDivider"/>
+            <a class = "mobileNavBarItem" href = "/applications_menu"><img src = "/res/icons/feedback.png" class = "mobileNavbarIcon">Applications</a>
+            <hr class = "mobileDivider"/>
+            <a class = "mobileNavBarItem" href = "/contact"><img src = "/res/icons/contact.png" class = "mobileNavbarIcon">Contact</a>
+            <hr class = "mobileDivider"/>
+            <a class = "mobileNavBarItem" href = "/drive"><img src = "/res/icons/cloud.png" class = "mobileNavbarIcon">BHMUN Drive</a>
+        </div>
+    </div>
+</div>
+
+<div class = "content">
+    <div class = "top unselectable">
+        <h1 class = "titleL">Stages & Deadlines</h1>
+    </div>
+
+    <div class = "contentM">
+        <div class = "stageBox blueBox textMargin">
+            <p>
+                <b>STAGE 1</b><br>
+                Complete an online application for one of the BHMUN roles
+            </p>
+        </div>
+        <p class = "text">
+            <b>The following applications must be made by the given deadline:</b></p>
+
+        <ul class = "text">
+            <li>United Nations Security Council (UNSC): Member State</li>
+            <li>Delegation(s)</li>
+            <li>Press Member</li>
+            <li>Admin Team Member</li>
+        </ul>
+
+        <div class = "box redBox textMargin">
+            <p>
+                <b>Application Deadline</b><br>
+                Monday, 12 July 2021
+            </p>
+        </div>
+
+        <div class = "stageBox blueBox textMargin">
+            <p>
+                <b>STAGE 2</b><br>
+                Submission of documents
+            </p>
+        </div>
+
+        <p class = "text">
+            <b>The following documents must be submitted 3 days after receipt of receiving an email from our Head of CPI.</b>
+        </p>
+        <ul class = "text">
+            <li>All participants must complete and sign the ‘Data Protection Policy Consent Form’ regarding the collection, processing and use of personal data. Submit this document by uploading to the BHMUN Drive. The name and signature of a parent / guardian must also be provided if the applicant is under 18 years of age.</li>
+        </ul>
+
+
+        <p class = "text"><b>Please click the box below to make an application:</b></p>
+
+        <br><br>
+        <button class = "btNext" onclick="apply()">Apply Now</button>
+        <button class = "btNext" onclick="openDPPC()">Data Protection Policy Consent</button>
+        <button class = "btNext" onclick="openCC()">Code of Conduct</button>
+    </div>
+</div>
+
+<div class = "footerDesktop">
+    <div class = "footer">
+        <!-- Sponsors -->
+        <div class = "sponsors">
+            <h3 style = "text-align: center; color: #fafafa;"><b>SPONSORS</b></h3>
+            <div style = "height: 60px; width: 228px; margin: 0 auto;">
+                <div class = "circle unselectable" style = "margin-left: 36%;"><a href = "https://www.genelseracilik.com/" target = "_blank"><img src = "/res/genel_seracilik.png" style = "width: 90%; margin-left: 5%; margin-top: 2px;"></a></div>
+                <!-- Old sponsors
+                <div class = "circle unselectable"><a href = "http://www.gulermak.com.tr/" target="_blank"><img src = "res/gulermak.png" style = "width: 90%; margin-left: 5%; margin-top: 5px;"></a></div>
+                <div class = "circle unselectable"><a href = "https://duveroglu.business.site/" target = "_blank"><img src = "res/duveroglu.png" style = "width: 90%; margin-left: 5%; margin-top: 2px;"></a></div>
+                <div class = "circle unselectable"><a href = "https://www.teaco.com.tr/" target  ="_blank"><img src = "res/teaco.png" style = "width: 90%; margin-left: 5%; margin-top: 2px;"></a></div>
+                -->
+            </div>
+        </div>
+
+        <!-- Social media -->
+        <div class = "socialMedia">
+            <h3 style = "text-align: center; color: #fafafa;"><b>BHMUN MEDIA</b></h3>
+            <a href = "https://www.instagram.com/bhmun/" target = "_blank"><img class = "socialMediaIcon instagram" src = "https://img.icons8.com/ios/100/fafafa/instagram-new.png"></a>
+            <a href = "https://www.facebook.com/bilkenthistoricalmun/" target = "_blank"><img class = "socialMediaIcon facebook" src = "https://img.icons8.com/ios/100/fafafa/facebook-circled.png"></a>
+            <a href = "https://twitter.com/BHMUN2020" target = "_blank"><img class = "socialMediaIcon twitter" src = "https://img.icons8.com/ios/100/fafafa/twitter-circled.png"></a>
+        </div>
+
+        <!-- Info -->
+        <div class = "address">
+            <h3 style = "margin-top: 8px;"><b>İHSAN DOĞRAMACI FOUNDATION<br>ÖZEL BILKENT HIGH SCHOOL</b></h3>
+            <p class = "addressText">Bilkent University East Campus<br>Çankaya, Ankara, 06800</p>
+        </div>
+    </div>
+
+    <div class = "footer2">
+        <hr style = "width: 90%; margin-left: 5%; height: 2px; background: #5a5a5a; border: none; border-radius: 5px; margin-top: 10px;">
+        <p class = "unselectable" style = "width: 90%; color: #cacaca; margin: 0 auto; text-align: center; font-size: 12px; line-height: 20px; padding-bottom: 10px;">Copyright © 2022 BHMUN | All Rights Reserved</p>
+        <p class = "unselectable" style = "color: #aaaaaa; font-size: 12px; line-height: 20px; padding-bottom: 10px; float: right; margin-top: -30px; margin-right: 5%;"><i>Designed by Alp Afyonluoglu</i></p>
+        <div style = "margin-left: 5%; margin-top: -30px;"><span id = "siteseal"><script async type = "text/javascript" src = "https://seal.godaddy.com/getSeal?sealID=tea0XfQ6JDvvP85Fv4RZNyeglfn9OFeQYCdxWn7jwX2MwPuVCSOh9LK4HJ9b"></script></span></div>
+    </div>
+</div>
+<div class = "footerMobile">
+    <div class = "footer">
+        <!-- Info -->
+        <div class = "address">
+            <h3 style = "margin-top: 8px;"><b>İHSAN DOĞRAMACI FOUNDATION<br>ÖZEL BILKENT HIGH SCHOOL</b></h3>
+            <p class = "addressText">Bilkent University East Campus<br>Çankaya, Ankara, 06800</p>
+        </div>
+
+        <!-- Social media -->
+        <div class = "socialMedia">
+            <h3 style = "text-align: center; color: #fafafa;"><b>BHMUN MEDIA</b></h3>
+            <a href = "https://www.instagram.com/bhmun/" target = "_blank"><img class = "socialMediaIcon instagram" src = "https://img.icons8.com/ios/100/fafafa/instagram-new.png"></a>
+            <a href = "https://www.facebook.com/bilkenthistoricalmun/" target = "_blank"><img class = "socialMediaIcon facebook" src = "https://img.icons8.com/ios/100/fafafa/facebook-circled.png"></a>
+            <a href = "https://twitter.com/BHMUN2020" target = "_blank"><img class = "socialMediaIcon twitter" src = "https://img.icons8.com/ios/100/fafafa/twitter-circled.png"></a>
+        </div>
+
+        <!-- Sponsors -->
+        <div class = "sponsors">
+            <h3 style = "text-align: center; color: #fafafa;"><b>SPONSORS</b></h3>
+            <div style = "height: 60px; width: 228px; margin: 0 auto;">
+                <div class = "circle unselectable" style = "margin-left: 36%;"><a href = "https://www.genelseracilik.com/" target = "_blank"><img src = "/res/genel_seracilik.png" style = "width: 90%; margin-left: 5%; margin-top: 2px;"></a></div>
+                <!-- Old sponsors
+                <div class = "circle unselectable"><a href = "http://www.gulermak.com.tr/" target="_blank"><img src = "res/gulermak.png" style = "width: 90%; margin-left: 5%; margin-top: 5px;"></a></div>
+                <div class = "circle unselectable"><a href = "https://duveroglu.business.site/" target = "_blank"><img src = "res/duveroglu.png" style = "width: 90%; margin-left: 5%; margin-top: 2px;"></a></div>
+                <div class = "circle unselectable"><a href = "https://www.teaco.com.tr/" target  ="_blank"><img src = "res/teaco.png" style = "width: 90%; margin-left: 5%; margin-top: 2px;"></a></div>
+                -->
+            </div>
+        </div>
+    </div>
+
+    <div class = "footer2">
+        <hr style = "width: 70%; margin-left: 15%; height: 2px; background: #5a5a5a; border: none; border-radius: 5px; margin-top: 10px;">
+        <p class = "unselectable" style = "width: 80%; color: #cacaca; margin: 0 auto; text-align: center; font-size: 12px; line-height: 20px; padding-bottom: 10px;">Copyright © 2022 BHMUN | All Rights Reserved</p>
+        <p class = "unselectable" style = "width: 80%; color: #aaaaaa; margin: 0 auto; text-align: center; font-size: 12px; line-height: 20px; padding-bottom: 10px; margin-top: -10px;"><i>Designed by Alp Afyonluoglu</i></p>
+    </div>
+</div>
+<script src = "/js/scripts.js"></script>
+
+<script>
+    function apply() {
+        window.open( "/delegate_application","_self");
+    }
+    function openDPPC() {
+        window.open( "/docs/BHMUN_Data_Protection_Policy_Consent_Form.pdf");
+    }
+    function openCC() {
+        window.open( "/docs/code_of_conduct.pdf");
+    }
+</script>
+</body>
+</html>

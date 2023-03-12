@@ -1,0 +1,129 @@
+/* Navbar underline */
+.underline {
+    margin-left: 110px;
+    width: 110px;
+}
+
+/* Top */
+.content .top {
+    background: url('../res/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 230px;
+    margin-top: -50px;
+
+    padding-top: 1px;
+    background-attachment: fixed;
+}
+
+.content .top .title {
+    font-family: 'Comfortaa', cursive;
+    font-size: 40px;
+    text-align: center;
+    line-height: 200px;
+}
+
+@media screen and ( min-width: 960px) {
+    .content .top {
+        background: url('../res/bg.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        width: 100%;
+        height: 350px;
+        margin-top: -50px;
+
+        padding-top: 1px;
+        background-attachment: fixed;
+    }
+
+    .content .top .title {
+        font-family: 'Comfortaa', cursive;
+        font-size: 60px;
+        text-align: center;
+        line-height: 300px;
+
+        margin-top: 30px;
+    }
+}
+
+/* Content */
+.contentM {
+    width: 100%;
+    padding-bottom: 80px;
+    background-color: #FAFAFA;
+    padding-top: 20px;
+    margin-top: -16px;
+    position: relative;
+    z-index: 1;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    box-shadow: 0px 0px 10px 0px rgba( 0.1, 0.1, 0.1, 0.3);
+}
+
+/* Sub Title Box */
+.subTitleBox {
+    font-family: arial, sans-serif;
+    margin: 0 auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-attachment: fixed;
+}
+.subTitleBox1 {
+    background: linear-gradient( rgba( 0, 0, 0, 0.5), rgba( 0, 0, 0, 0.5) ), url('../res/museum.jpg');
+}
+.subTitleBox2 {
+    background: linear-gradient( rgba( 0, 0, 0, 0.5), rgba( 0, 0, 0, 0.5) ), url('../res/food.jpg');
+}
+
+.subTitle {
+    text-align: center;
+    font-size: 18px;
+    color: #eaeaea;
+}
+
+@media screen and ( min-width: 960px) {
+    .subTitleBox {
+        font-family: arial, sans-serif;
+        margin: 0 auto;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-attachment: fixed;
+    }
+
+    .subTitle {
+        text-align: center;
+        font-size: 25px;
+        color: #eaeaea;
+    }
+}
+
+/* In-text Sub Titles */
+.content .placesSubTitle {
+    color: #1A237E;
+    font-weight: bold;
+
+}
+
+.content .foodSubTitle {
+    color: #B61C1C;
+    font-weight: bold;
+}
+
+.content .foodSubTitle2 {
+    color: #000000;
+    font-weight: bold;
+    margin-top: 50px;
+}

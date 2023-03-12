@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>BHMUN Herald | BHMUN</title>
+    <link rel = "stylesheet" type = "text/css" href = "/css/styles.css">
+    <link rel = "stylesheet" type = "text/css" href = "/css/bhmun_herald.css">
+
+    <meta charset = "UTF-8">
+    <link rel = "icon" href = "/res/bhmun_material.png">
+    <link href = "https://fonts.googleapis.com/css?family=Comfortaa" rel = "stylesheet">
+    <link href = "https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel = "stylesheet">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src = "https://www.googletagmanager.com/gtag/js?id=UA-145106302-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push( arguments); }
+        gtag( 'js', new Date());
+
+        gtag( 'config', 'UA-145106302-1');
+    </script>
+</head>
+<body>
+
+<!-- Navbar Desktop -->
+<div class = "navBarDesktop" id = "navBarDesktop">
+    <!-- Navbar Light -->
+    <div class = "navBar navBarLight blurLight unselectable" id = "navBarLight">
+        <a class = "imgLink" style = "cursor: pointer;" href = "/">
+            <img src = "/res/bhmun_b.png" class = "imgIcon unselectable"/>
+        </a>
+
+        <div class = "buttons">
+            <ul>
+                <li class = "btHome button" onmouseover = "showHomeDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/">Home</a>
+                </li>
+                <li class = "btAbout button" onmouseover = "showAboutDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/about">About</a>
+                </li>
+                <li class = "btConference button" onmouseover = "showConferenceDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/conference">Conference</a>
+                </li>
+                <li class = "btCommittees button" onmouseover = "showCommitteesDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/committees">Committees</a>
+                </li>
+                <li class = "btRegistration button" onmouseover = "showRegistrationDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/applications_menu">Applications</a>
+                </li>
+                <li class = "btContact button" onmouseover = "showContactDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/contact">Contact</a>
+                </li>
+                <li class = "btDrive button" onmouseover = "showCloudDropdown()" onmouseout = "hideDropdowns()">
+                    <a class = "aBhmunDrive" href = "/drive">
+                        <img class = "bhmunDriveLogo" src = "/res/icons/cloud.png">
+                    </a>
+                </li>
+
+                <hr class = "underline" id = "underlineLight"/>
+            </ul>
+        </div>
+    </div>
+    <div class = "dropdownMenu dropdownMenuLight" id = "dropdownMenuLight">
+        <div class = "dropdownAbout dropdownContent" onmouseover = "showAboutDropdown()" onmouseout = "hideDropdowns()" id = "dropdownAboutLight">
+            <div class = "dropdownContentTop"></div>
+            <div class = "dropdownContentLinks">
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 0)" onmouseout = "resetUnderlineTopMargin()" href = "/about_bhmun">
+                    BHMUN History
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 1)" onmouseout = "resetUnderlineTopMargin()" href = "http://www.obl.bilkent.edu.tr/index.php/en/">
+                    Özel Bilkent High School
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 2)" onmouseout = "resetUnderlineTopMargin()" href = "/about_ankara">
+                    Bilkent & Ankara
+                </a>
+            </div>
+        </div>
+
+        <div class = "dropdownConference dropdownContent" onmouseover = "showConferenceDropdown()" onmouseout = "hideDropdowns()" id = "dropdownConferenceLight">
+            <div class = "dropdownContentTop"></div>
+            <div class = "dropdownContentLinks">
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 0)" onmouseout = "resetUnderlineTopMargin()" href = "/schedule">
+                    Schedule
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 1)" onmouseout = "resetUnderlineTopMargin()" href = "/organagram">
+                    Organagram
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 2)" onmouseout = "resetUnderlineTopMargin()" href = "/executive_team">
+                    Executive Team
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 3)" onmouseout = "resetUnderlineTopMargin()" href = "/rules_and_procedure">
+                    Harvard Procedures
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 4)" onmouseout = "resetUnderlineTopMargin()" href = "/bhmun_herald">
+                    BHMUN Herald
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 5)" onmouseout = "resetUnderlineTopMargin()" href = "/rules_and_regulations">
+                    Rules & Regulations
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 6)" onmouseout = "resetUnderlineTopMargin()" href = "/drive">
+                    BHMUN Drive
+                </a>
+            </div>
+        </div>
+
+        <div class = "dropdownRegistration dropdownContent"  onmouseover = "showRegistrationDropdown()" onmouseout = "hideDropdowns()" id = "dropdownRegistrationLight">
+            <div class = "dropdownContentTop"></div>
+            <div class = "dropdownContentLinks">
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 0)" onmouseout = "resetUnderlineTopMargin()" href = "/data_protection">
+                    Data Protection
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 1)" onmouseout = "resetUnderlineTopMargin()" href = "/application_overview">
+                    Application Overview
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 2)" onmouseout = "resetUnderlineTopMargin()" href = "/stages_and_deadlines">
+                    Stages & Deadlines
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Navbar Mobile -->
+<div class = "navBarMobile" id = "navBarMobile">
+    <div class = "mobileBar mobileBarLight blurLight" id = "mobileBarLight">
+        <div class = "mobileTitleAndIcon unselectable">
+            <img class = "imgIconMobile unselectable" src = "/res/bhmun_b.png"/>
+            <h1 class = "mobileTitle">BHMUN</h1>
+        </div>
+        <img class = "mobileMenu" src = "https://img.icons8.com/material-outlined/96/000000/menu.png" onclick="showMobileNavigation()">
+    </div>
+
+    <div class = "mobileNavigation blurLight" id = "mobileNavigation" style = "display: none">
+        <div class = "mobileTitleAndIcon unselectable">
+            <img class = "imgIconMobile unselectable" src = "/res/bhmun_b.png"/>
+            <h1 class = "mobileTitle">BHMUN</h1>
+        </div>
+        <img class = "mobileMenu" src = "https://img.icons8.com/material-rounded/24/000000/delete-sign.png" onclick="hideMobileNavigation()">
+
+        <div class = "mobileNavigationBox">
+            <a class = "mobileNavBarItem" href = "/"><img src = "/res/icons/home.png" class = "mobileNavbarIcon">Home</a>
+            <hr class = "mobileDivider"/>
+            <a class = "mobileNavBarItem" href = "/about"><img src = "/res/icons/about.png" class = "mobileNavbarIcon">About</a>
+            <hr class = "mobileDivider"/>
+            <a class = "mobileNavBarItem" href = "/conference"><img src = "/res/icons/conference.png" class = "mobileNavbarIcon">Conference</a>
+            <hr class = "mobileDivider"/>
+            <a class = "mobileNavBarItem" href = "/committees"><img src = "/res/icons/committees.png" class = "mobileNavbarIcon">Committees</a>
+            <hr class = "mobileDivider"/>
+            <a class = "mobileNavBarItem" href = "/applications_menu"><img src = "/res/icons/feedback.png" class = "mobileNavbarIcon">Applications</a>
+            <hr class = "mobileDivider"/>
+            <a class = "mobileNavBarItem" href = "/contact"><img src = "/res/icons/contact.png" class = "mobileNavbarIcon">Contact</a>
+            <hr class = "mobileDivider"/>
+            <a class = "mobileNavBarItem" href = "/drive"><img src = "/res/icons/cloud.png" class = "mobileNavbarIcon">BHMUN Drive</a>
+        </div>
+    </div>
+</div>
+
+<div class = "content">
+    <div class = "top unselectable">
+        <h1 class = "titleC">BHMUN Herald</h1>
+    </div>
+
+    <div class = "contentM">
+        <p class = "title"><b>Newspaper</b></p>
+        <p class = "text">An online newspaper will be prepared by the press team by the final session of each day.
+            Posters will be printed containing a QR code and placed around the school for delegates to access using a smart phone.
+            This will include daily news about the committees, our Academic and Organisation Team members and entertaining gossip.</p>
+        <hr class = "separator">
+
+        <div class = "boxes">
+            <!--<a href = "docs/BHMUN_Herald_-_Day_2.pdf" target = "_blank">
+                <div class = "textBox textIn">
+                    <p style = "color: #b10006;"><b>Saturday 26<sup>th</sup> October, 2019: Day 2</b></p>
+                    <p>
+                        ISSUE 5.1 BHMUN HERALD NEWSPAPER - CLICK HERE
+                    </p>
+                </div>
+            </a>-->
+
+            <p class = "text" style = "text-align: center;"><b>The BHMUN Herald newspaper will be published here during the conference</b></p>
+        </div>
+
+        <hr class = "separator">
+
+        <p class = "text">From previous years:</p>
+
+        <a href = "/bhmun_herald_19" class = "link">
+            <div class = "textP" style = " margin-top: 0;">
+                <p><b>BHMUN Herald '19</b></p>
+            </div>
+        </a>
+    </div>
+</div>
+
+<%- include( 'footer') -%>
+
+</body>
+</html>

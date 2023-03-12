@@ -1,0 +1,795 @@
+/* Navbar underline */
+.underline {
+    margin-left: 0;
+    width: 110px;
+}
+
+/* Trailer Box */
+.trailerBox {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    display: none;
+    background-color: rgba( 0, 0, 0, 0.6);
+    -webkit-backdrop-filter: saturate( 110%) blur( 2em);
+    backdrop-filter: saturate( 110%) blur( 2em);
+}
+
+.trailerBox .trailerBox2 {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50%;
+    height: auto;
+}
+@media screen and ( min-width: 960px) {
+    .trailerBox .trailerBox2 {
+        width: 55%;
+        margin: 0 auto;
+        margin-top: 100px;
+        height: auto;
+    }
+}
+
+.trailerBox .mainVideo {
+    width: 98%;
+    border-radius: 16px;
+    outline: none;
+    margin-left: 1%;
+    margin-bottom: 10px;
+}
+
+/* Popup */
+.popup {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background-color: rgba( 0, 0, 0, 0.6);
+    -webkit-backdrop-filter: saturate( 110%) blur( 2em);
+    backdrop-filter: saturate( 110%) blur( 2em);
+}
+
+/* Popup - Small screen */
+.popup .popupBox {
+    position: fixed;
+    width: 70%;
+    height: 110vw;
+    margin-left: 15%;
+    margin-top: 30%;
+    border-radius: 16px;
+}
+
+.popup .closePopup {
+    cursor: pointer;
+    float: right;
+    margin-top: 3vw;
+    margin-right: 3vw;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    padding: 0.4vw;
+    width: 4vw;
+}
+.popup .closePopup:hover {
+    background-color: rgba( 0, 0, 0, 0.2);
+}
+
+.popup .popupTitle {
+    font-family: 'Comfortaa', cursive;
+    font-size: 10vw;
+    color: #fafafa;
+    opacity: 0.95;
+    text-align: center;
+    margin-top: 2vw;
+}
+
+.popup .popupSubTitle {
+    font-family: 'Arial', serif;
+    font-size: 5vw;
+    color: rgba( 255, 255, 255, 0.6);
+    text-align: center;
+    margin-top: -11vw;
+}
+
+.popup .popupText {
+    width: 90%;
+    margin-left: 5%;
+    font-family: 'Arial', serif;
+    font-size: 5vw;
+    text-align: center;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+
+    position: absolute;
+    bottom: 0px;
+    background-color: #fafafa;
+    opacity: 0.85;
+
+    border-radius: 16px;
+    box-shadow: 0px 0px 10px 0px rgba( 0.1, 0.1, 0.1, 0.3);
+    font-weight:bold;
+}
+
+.popup .popupTextSpan {
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    display:block;
+}
+
+.popup .popupLogo {
+    display: inline-block;
+    height: 30vw;
+    align-items: center;
+    text-align: center;
+    margin-top: 18vw;
+    opacity: 0.95;
+    padding-left: 7.8vw;
+}
+
+/* Popup - Large screen */
+@media screen and (min-width: 900px) {
+    .popup .popupBox {
+        width: 30%;
+        height: 30vw;
+        margin-left: 35%;
+        margin-top: 10%;
+    }
+
+    .popup .closePopup {
+        margin-top: 0.3vw;
+        margin-right: 0.3vw;
+        padding: 0.4vw;
+        width: 1.2vw;
+        overflow: hidden;
+    }
+
+    .popup .popupTitle {
+        font-size: 3vw;
+        margin-top: 0.6vw;
+    }
+
+    .popup .popupSubTitle {
+        font-size: 1.5vw;
+        margin-top: -3.3vw;
+    }
+
+    .popup .popupText {
+        font-size: 1.2vw;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        bottom: 20px;
+    }
+
+    .popup .popupLogo {
+        height: 12vw;
+        margin-top: 2vw;
+        padding-left: 2.3vw;
+    }
+}
+
+.shine {
+    background: #222 -webkit-gradient( linear, left top, right top, from( #222), to( #222), color-stop( 0.5, #fff)) 0 0 no-repeat;
+    background-image: -webkit-linear-gradient( -40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
+    -webkit-background-size: 200px;
+    color: rgba( 255, 255, 255, 0.3);
+    -webkit-background-clip: text;
+    -webkit-animation-name: shineAnim;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    text-shadow: 0 0px 0px rgba( 255, 255, 255, 0.5);
+}
+
+@-webkit-keyframes shineAnim {
+    0% {
+        background-position: -1000px;
+    }
+    5% {
+        background-position: top -2vw;
+    }
+    95% {
+        background-position: top 2vw;
+    }
+    100% {
+        background-position: 1000px;
+    }
+}
+
+.css-selector {
+    background: linear-gradient(225deg, #b61c1c, #1a237e);
+    background-size: 400% 400%;
+
+    -webkit-animation: background_gradient 20s ease infinite;
+    -moz-animation: background_gradient 20s ease infinite;
+    -o-animation: background_gradient 20s ease infinite;
+    animation: background_gradient 20s ease infinite;
+}
+
+@-webkit-keyframes background_gradient {
+    0%{background-position:93% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:93% 0%}
+}
+@-moz-keyframes background_gradient {
+    0%{background-position:93% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:93% 0%}
+}
+@-o-keyframes background_gradient {
+    0%{background-position:93% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:93% 0%}
+}
+@keyframes background_gradient {
+    0%{background-position:93% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:93% 0%}
+}
+
+/* Top box */
+.content .top {
+    width: 100%;
+    height: 54vw;
+}
+
+/* Slideshow */
+.slideshowBackground, .slideshowForeground {
+    width: 100%;
+    height: 100%;
+    background-position: center; background-size: cover; background-repeat: no-repeat;
+    margin: auto;
+    margin-top: -50px;
+    background-size: cover;
+    background-blend-mode: saturation;
+}
+
+.previousSlide, .nextSlide {
+    position: fixed;
+    float: left;
+    clear: left;
+    text-align: center;
+    align-items: center;
+    opacity: 0.7;
+    cursor: pointer;
+    margin-top: 40vh;
+    font-size: 10vw;
+    width: 3vw;
+    height: 3vw;
+    padding-top: 0.1vw;
+    padding-left: 0.1vw;
+    color: #FAFAFA;
+    font-weight: bold;
+    transition: 0.3s ease;
+    z-index: 0;
+    border-radius: 50%;
+    font-family: 'Concert One', cursive;
+    text-shadow: 2px 2px 10px #3c3c3c;
+}
+.nextSlide {
+    right: 10px;
+}
+.previousSlide:hover, .nextSlide:hover {
+    opacity: 1;
+    background-color: rgba( 0, 0, 0, 0.4);
+}
+
+.slideControlButtons {
+    align-items: center;
+    float: left;
+    clear: left;
+    margin-top: -4vw;
+    margin-left: 1vw;
+    display: none;
+}
+
+.dot {
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    color: rgba( 0,0,0,0);
+    font-size: 1.5vw;
+    padding-bottom: 1vw;
+    cursor: pointer;
+    height: 0.9vw;
+    width: 1.5vw;
+    transition: 0.3s ease;
+    display: inline-block;
+    margin-left: 0.2vw;
+    margin-right: 0.2vw;
+    margin-bottom: 0.2vw;
+    border-bottom: 3px solid rgba( 255,255,255,0.3);
+}
+.dot:hover {
+    color: rgba( 255,255,255,0.9);;
+    border-bottom: 3px solid rgba( 255,255,255,1);
+}
+
+.active {
+    border-bottom: 3px solid rgba( 255,255,255,0.9);
+}
+
+.cacheImg {
+    height: 1px;
+    width: 1px;
+    display: none;
+}
+
+@media screen and ( min-width: 990px) {
+    .slideControlButtons {
+        display: block;
+    }
+
+    .previousSlide, .nextSlide {
+        font-size: 2vw;
+    }
+    .nextSlide {
+        right: 0px;
+    }
+}
+
+/* Countdown and Title */
+.countdownAndTitleBox {
+    position: fixed;
+    height: 20vw;
+    margin-left: 15%;
+    width: 70%;
+    bottom: 2vw;
+    align-items: center;
+}
+@media screen and ( min-width: 990px) {
+    .countdownAndTitleBox {
+        float: right;
+        right: 0;
+        height: 20vw;
+        width: 30vw;
+        bottom: 2vw;
+        margin-right: 1vw;
+        align-items: center;
+    }
+}
+
+/* Title */
+.countdownAndTitleBox .titleBox {
+    position: absolute;
+    padding: 1vw;
+    margin-top: -100px;
+    padding-left: 2vw;
+    font-family: 'Comfortaa', cursive;
+    width: 100%;
+    height: 60px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.titleBox .titleIcon {
+    position: absolute;
+    display: inline;
+    vertical-align: middle;
+    margin-left: -120px;
+    width: 70px;
+    z-index: 1;
+    filter: drop-shadow( 2px 10px 8px #3c3c3c);
+    -webkit-filter: drop-shadow( 2px 10px 8px #3c3c3c);
+}
+
+.titleBox .title {
+    font-size: 26px;
+    margin-top: 6px;
+    color: #FAFAFA;
+    text-shadow: 2px 2px 10px #3c3c3c;
+}
+
+.titleBox .subTitle {
+    font-size: 12px;
+    margin-top: -14px;
+    color: #FAFAFA;
+    text-shadow: 2px 2px 10px #3c3c3c;
+}
+
+@media screen and ( min-width: 960px) {
+    .countdownAndTitleBox .titleBox {
+        position: fixed;
+        top: 1vw;
+        left: 0px;
+        padding-top: 1vw;
+        padding-left: 2vw;
+        float: left;
+        text-align: center;
+        font-family: 'Comfortaa', cursive;
+        width: 28vw;
+        height: 7vw;
+        border-radius: 16px;
+        margin-top: 40px;
+    }
+
+    .titleBox .titleIcon {
+        width: 7.2vw;
+        margin-left: -14vw;
+        float: left;
+        position: fixed;
+        z-index: 1;
+        filter: drop-shadow( 2px 10px 8px #3c3c3c);
+        -webkit-filter: drop-shadow( 2px 10px 8px #3c3c3c);
+    }
+
+    .titleBox .title {
+        margin-left: -3.5vw;
+        font-size: 3vw;
+        margin-top: 0.4vw;
+        color: #FAFAFA;
+        z-index: 1;
+        text-shadow: 2px 2px 10px #3c3c3c;
+    }
+
+    .titleBox .subTitle {
+        margin-left: -3vw;
+        font-size: 1.5vw;
+        margin-top: -2vw;
+        color: #FAFAFA;
+        z-index: 1;
+        text-shadow: 2px 2px 10px #3c3c3c;
+    }
+}
+
+/* Countdown */
+.countdownAndTitleBox .countdownBox {
+    position: absolute;
+    margin-top: -20px;
+    height: 80px;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.countdownBox .countdownMessage {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: arial, sans-serif;
+    text-align: center;
+    font-size: 10px;
+    line-height: 15px;
+    color: #cacaca;
+    margin-top: 25px;
+}
+
+.countdownBox .countdown {
+    position: absolute;
+    width: 80%;
+    margin-left: 10%;
+    align-items: center;
+    text-align: center;
+    margin-top: -60px;
+}
+
+.countdown .day, .countdown .hour, .countdown .minute, .countdown .second {
+    float: right;
+    font-family: 'Comfortaa', cursive;
+    color: #FAFAFA;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.content .countdown .textTime {
+    font-size: 20px;
+    height: 5px;
+}
+
+.content .countdown .subTextTime {
+    color: #C62C2C;
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 8px;
+}
+
+.countdownBox hr {
+    margin: 0;
+    height: 1px;
+    border: none;
+    border-radius: 2px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 50px;
+    background-color: rgba( 255, 255, 255, 0.8);
+}
+
+.countdownBox .date {
+    color: rgba( 255, 255, 255, 0.7);
+    font-family: 'Comfortaa', cursive;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 0vw;
+    padding: 10px;
+}
+
+@media screen and ( min-width: 960px) {
+    .countdownAndTitleBox .countdownBox {
+        position: fixed;
+        margin-top: 12vw;
+        height: 9vw;
+        width: 30vw;
+        border-radius: 16px;
+    }
+
+    .countdownBox .countdownMessage {
+        font-family: arial, sans-serif;
+        text-align: center;
+        font-size: 1vw;
+        line-height: 1.5vw;
+        color: #cacaca;
+        margin-top: 3vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+
+    .countdownBox .countdown {
+        position: fixed;
+        width: 30vw;
+        align-items: center;
+        text-align: center;
+        right: 0;
+        margin-right: 4.5vw;
+        margin-top: -6.5vw;
+    }
+
+    .countdown .day, .countdown .hour, .countdown .minute, .countdown .second {
+        float: right;
+        font-family: 'Comfortaa', cursive;
+        color: #FAFAFA;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+
+    .content .countdown .textTime {
+        font-size: 2.2vw;
+        height: 1vw;
+    }
+
+    .content .countdown .subTextTime {
+        color: #C62C2C;
+        margin-top: -0.6vw;
+        font-weight: bold;
+        font-size: 0.9vw;
+    }
+
+    .countdownBox hr {
+        margin: 0;
+        height: 1px;
+        border: none;
+        border-radius: 2px;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 5.5vw;
+        background-color: rgba( 255, 255, 255, 0.8);
+    }
+
+    .countdownBox .date {
+        color: rgba( 255, 255, 255, 0.7);
+        font-family: 'Comfortaa', cursive;
+        font-size: 1.2vw;
+        text-align: center;
+        margin-top: 0vw;
+        padding: 10px;
+    }
+}
+
+/* Main Content */
+.content .letter {
+    width: 100%;
+    padding-bottom: 80px;
+    background-color: #FAFAFA;
+    padding-top: 50px;
+    margin-top: -5px;
+    text-align: justify;
+    font-family: arial, sans-serif;
+    position: relative;
+    z-index: 1;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    box-shadow: 0px 0px 10px 0px rgba( 0.1, 0.1, 0.1, 0.3);
+}
+
+/* Theme and trailer */
+.content .themeAndTrailerBox {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: -5px;
+    background-color: #fafafa;
+    float: left;
+    border-radius: 16px;
+    box-shadow: 0px 0px 10px 0px rgba( 0.1, 0.1, 0.1, 0.15);
+}
+
+@media screen and ( min-width: 960px) {
+    .content .themeAndTrailerBox {
+        height: 60px;
+        margin-top: 25px;
+    }
+}
+
+/* Theme */
+.themeAndTrailerBox .theme  {
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+}
+
+.themeAndTrailerBox .separator {
+    height: 1px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: -10px;
+    background-color: rgba( 0, 0, 0, 0.3);
+}
+
+@media screen and ( min-width: 960px) {
+    .themeAndTrailerBox .theme  {
+        font-family: 'Comfortaa', cursive;
+        font-size: 20px;
+        width: 49.5%;
+        float: left;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .themeAndTrailerBox .separator {
+        height: 36px;
+        width: 1px;
+        margin-top: 12px;
+        margin-left: 0px;
+        background-color: rgba( 0, 0, 0, 0.3);
+        float: left;
+    }
+}
+
+/* Trailer */
+.themeAndTrailerBox .trailer {
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 8px;
+    padding-bottom: 8px;
+}
+
+.trailer .text {
+    display: inline;
+    vertical-align: middle;
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+}
+
+.trailer .startTrailer {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: -20px;
+    display: inline;
+    vertical-align: middle;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+@media screen and ( min-width: 960px) {
+    .themeAndTrailerBox .trailer {
+        font-family: 'Comfortaa', cursive;
+        font-size: 20px;
+        width: 49.5%;
+        float: left;
+        text-align: center;
+        line-height: 30px;
+        margin-top: 12px;
+    }
+
+    .trailer .startTrailer {
+        position: absolute;
+        margin-top: 5px;
+        margin-left: -30px;
+        display: inline;
+        vertical-align: middle;
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+    }
+}
+
+/* Letter */
+.letter .text{
+    width: 70%;
+    margin: 0 auto;
+    font-size: 18px;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 0px;
+    line-height: 38px;
+}
+
+.letter .title{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 150px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    color: #b10006;
+}
+
+.letter .titleP {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    color: #b10006;
+}
+
+.content .letter .textP{
+    width: 70%;
+    margin: 0 auto;
+    font-size: 16px;
+    height: auto;
+    line-height: 26px;
+    text-indent: 50px;
+}
+
+.letter .pEndDesktop {
+    display: none;
+}
+
+.letter .pEndMobile {
+    display: block;
+}
+
+.letter .textE {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 14px;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 20px;
+    line-height: 30px;
+}
+
+@media screen and ( min-width: 960px) {
+    .letter .title{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 150px;
+        font-size: 25px;
+        text-align: center;
+        font-family: 'Comfortaa', cursive;
+        color: #b10006;
+    }
+
+    .letter .titleP {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 25px;
+        text-align: center;
+        font-family: 'Comfortaa', cursive;
+        color: #b10006;
+    }
+
+    .content .letter .textP{
+        width: 70%;
+        margin: 0 auto;
+        font-size: 18px;
+        height: auto;
+        padding-left: 5%;
+        padding-right: 5%;
+        line-height: 38px;
+        text-indent: 50px;
+    }
+
+    .letter .pEndDesktop {
+        display: block;
+    }
+
+    .letter .pEndMobile {
+        display: none;
+    }
+}

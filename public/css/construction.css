@@ -1,0 +1,119 @@
+.content {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    backdrop-filter: brightness(80%);
+}
+
+.content .textBox {
+    position: fixed;
+    margin: 0;
+    left: 50%;
+    top: 40%;
+    -ms-transform: translate(-30%, -40%);
+    transform: translate(-50%, -40%);
+
+    width: 80%;
+    padding: 1rem;
+
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0px 0px 20px 0px rgba( 0.1, 0.1, 0.1, 0.1);
+
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.content .textBox .title {
+    font-family: 'Comfortaa', cursive;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: #000000;
+    font-weight: bold;
+}
+
+.content .textBox .text {
+    font-size: 1rem;
+    line-height: 1rem;
+    text-align: center;
+
+    font-family: arial, sans-serif;
+    color: rgba( 0, 0, 0, 0.6);
+}
+
+.content .textBox .image {
+    width: 12rem;
+    opacity: 0.9;
+
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+@media screen and ( min-width: 990px) {
+    .content {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+
+        backdrop-filter: brightness(80%);
+    }
+
+    .content .textBox {
+        position: fixed;
+        margin: 0;
+        left: 50%;
+        top: 40%;
+        -ms-transform: translate(-30%, -40%);
+        transform: translate(-50%, -40%);
+
+        width: 50%;
+        padding: 2rem;
+
+        text-align: center;
+        border-radius: 16px;
+        box-shadow: 0px 0px 20px 0px rgba( 0.1, 0.1, 0.1, 0.1);
+
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+
+    .content .textBox .title {
+        font-family: 'Comfortaa', cursive;
+        font-size: 2.4rem;
+        line-height: 2.5rem;
+        color: #000000;
+        font-weight: bold;
+    }
+
+    .content .textBox .text {
+        font-size: 1.2rem;
+        line-height: 1.3rem;
+        margin-top: -1rem;
+
+        font-family: arial, sans-serif;
+        color: rgba( 0, 0, 0, 0.6);
+    }
+
+    .content .textBox .image {
+        width: 15rem;
+        opacity: 0.9;
+
+        display: inline-block;
+        margin-top: 1rem;
+    }
+}
+
+body {
+    background: linear-gradient( 225deg, #E57373, #f0e7ec, #7986CB); /* #B47C9B in the middle */
+
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}

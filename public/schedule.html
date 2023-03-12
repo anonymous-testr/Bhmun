@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>Schedule | BHMUN</title>
+    <link rel = "stylesheet" type = "text/css" href = "/css/styles.css">
+    <link rel = "stylesheet" type = "text/css" href = "/css/schedule.css">
+
+    <meta charset = "UTF-8">
+    <link rel = "icon" href = "/res/bhmun_material.png">
+    <link href = "https://fonts.googleapis.com/css?family=Comfortaa" rel = "stylesheet">
+    <link href = "https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel = "stylesheet">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src = "https://www.googletagmanager.com/gtag/js?id=UA-145106302-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push( arguments); }
+        gtag( 'js', new Date());
+
+        gtag( 'config', 'UA-145106302-1');
+    </script>
+</head>
+<body>
+
+<!-- Navbar Desktop -->
+<div class = "navBarDesktop" id = "navBarDesktop">
+    <!-- Navbar Light -->
+    <div class = "navBar navBarLight blurLight unselectable" id = "navBarLight">
+        <a class = "imgLink" style = "cursor: pointer;" href = "/">
+            <img src = "/res/bhmun_b.png" class = "imgIcon unselectable"/>
+        </a>
+
+        <div class = "buttons">
+            <ul>
+                <li class = "btHome button" onmouseover = "showHomeDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/">Home</a>
+                </li>
+                <li class = "btAbout button" onmouseover = "showAboutDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/about">About</a>
+                </li>
+                <li class = "btConference button" onmouseover = "showConferenceDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/conference">Conference</a>
+                </li>
+                <li class = "btCommittees button" onmouseover = "showCommitteesDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/committees">Committees</a>
+                </li>
+                <li class = "btRegistration button" onmouseover = "showRegistrationDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/applications_menu">Applications</a>
+                </li>
+                <li class = "btContact button" onmouseover = "showContactDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/contact">Contact</a>
+                </li>
+                <li class = "btDrive button" onmouseover = "showCloudDropdown()" onmouseout = "hideDropdowns()">
+                    <a class = "aBhmunDrive" href = "/drive">
+                        <img class = "bhmunDriveLogo" src = "/res/icons/cloud.png">
+                    </a>
+                </li>
+
+                <hr class = "underline" id = "underlineLight"/>
+            </ul>
+        </div>
+    </div>
+    <div class = "dropdownMenu dropdownMenuLight" id = "dropdownMenuLight">
+        <div class = "dropdownAbout dropdownContent" onmouseover = "showAboutDropdown()" onmouseout = "hideDropdowns()" id = "dropdownAboutLight">
+            <div class = "dropdownContentTop"></div>
+            <div class = "dropdownContentLinks">
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 0)" onmouseout = "resetUnderlineTopMargin()" href = "/about_bhmun">
+                    BHMUN History
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 1)" onmouseout = "resetUnderlineTopMargin()" href = "http://www.obl.bilkent.edu.tr/index.php/en/">
+                    Özel Bilkent High School
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 2)" onmouseout = "resetUnderlineTopMargin()" href = "/about_ankara">
+                    Bilkent & Ankara
+                </a>
+            </div>
+        </div>
+
+        <div class = "dropdownConference dropdownContent" onmouseover = "showConferenceDropdown()" onmouseout = "hideDropdowns()" id = "dropdownConferenceLight">
+            <div class = "dropdownContentTop"></div>
+            <div class = "dropdownContentLinks">
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 0)" onmouseout = "resetUnderlineTopMargin()" href = "/schedule">
+                    Schedule
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 1)" onmouseout = "resetUnderlineTopMargin()" href = "/organagram">
+                    Organagram
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 2)" onmouseout = "resetUnderlineTopMargin()" href = "/executive_team">
+                    Executive Team
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 3)" onmouseout = "resetUnderlineTopMargin()" href = "/rules_and_procedure">
+                    Harvard Procedures
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 4)" onmouseout = "resetUnderlineTopMargin()" href = "/bhmun_herald">
+                    BHMUN Herald
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 5)" onmouseout = "resetUnderlineTopMargin()" href = "/rules_and_regulations">
+                    Rules & Regulations
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 6)" onmouseout = "resetUnderlineTopMargin()" href = "/drive">
+                    BHMUN Drive
+                </a>
+            </div>
+        </div>
+
+        <div class = "dropdownRegistration dropdownContent"  onmouseover = "showRegistrationDropdown()" onmouseout = "hideDropdowns()" id = "dropdownRegistrationLight">
+            <div class = "dropdownContentTop"></div>
+            <div class = "dropdownContentLinks">
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 0)" onmouseout = "resetUnderlineTopMargin()" href = "/data_protection">
+                    Data Protection
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 1)" onmouseout = "resetUnderlineTopMargin()" href = "/application_overview">
+                    Application Overview
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 2)" onmouseout = "resetUnderlineTopMargin()" href = "/stages_and_deadlines">
+                    Stages & Deadlines
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Navbar Mobile -->
+<div class = "navBarMobile" id = "navBarMobile">
+    <div class = "mobileBar mobileBarLight blurLight" id = "mobileBarLight">
+        <div class = "mobileTitleAndIcon unselectable">
+            <img class = "imgIconMobile unselectable" src = "/res/bhmun_b.png"/>
+            <h1 class = "mobileTitle">BHMUN</h1>
+        </div>
+        <img class = "mobileMenu" src = "https://img.icons8.com/material-outlined/96/000000/menu.png" onclick="showMobileNavigation()">
+    </div>
+
+    <div class = "mobileNavigation blurLight" id = "mobileNavigation" style = "display: none">
+        <div class = "mobileTitleAndIcon unselectable">
+            <img class = "imgIconMobile unselectable" src = "/res/bhmun_b.png"/>
+            <h1 class = "mobileTitle">BHMUN</h1>
+        </div>
+        <img class = "mobileMenu" src = "https://img.icons8.com/material-rounded/24/000000/delete-sign.png" onclick="hideMobileNavigation()">
+
+        <div class = "mobileNavigationBox">
+            <a class = "mobileNavBarItem" href = "/"><img src = "/res/icons/home.png" class = "mobileNavbarIcon">Home</a>
+            <hr class = "mobileDivider"/>
+            <a class = "mobileNavBarItem" href = "/about"><img src = "/res/icons/about.png" class = "mobileNavbarIcon">About</a>
+            <hr class = "mobileDivider"/>
+            <a class = "mobileNavBarItem" href = "/conference"><img src = "/res/icons/conference.png" class = "mobileNavbarIcon">Conference</a>
+            <hr class = "mobileDivider"/>
+            <a class = "mobileNavBarItem" href = "/committees"><img src = "/res/icons/committees.png" class = "mobileNavbarIcon">Committees</a>
+            <hr class = "mobileDivider"/>
+            <a class = "mobileNavBarItem" href = "/applications_menu"><img src = "/res/icons/feedback.png" class = "mobileNavbarIcon">Applications</a>
+            <hr class = "mobileDivider"/>
+            <a class = "mobileNavBarItem" href = "/contact"><img src = "/res/icons/contact.png" class = "mobileNavbarIcon">Contact</a>
+            <hr class = "mobileDivider"/>
+            <a class = "mobileNavBarItem" href = "/drive"><img src = "/res/icons/cloud.png" class = "mobileNavbarIcon">BHMUN Drive</a>
+        </div>
+    </div>
+</div>
+
+<div class = "content">
+    <div class = "top unselectable">
+        <h1 class = "title">Schedule</h1>
+    </div>
+
+    <div class = "contentM">
+        <div class = "tables">
+            <p class = "desc"><i>Tuesday 13<sup>th</sup> July, 2021</i></p>
+            <table class = "table1">
+                <tr>
+                    <td>16:00 - 17:00</td>
+                    <td>Opening Ceremony</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>17:00 - 17:15</td>
+                    <td>Coffee Break</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>17:15 - 18:00</td>
+                    <td>BHMUN Procedure Presentation</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>18:00 - 18:15</td>
+                    <td>Coffee Break</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>18:15 - 19:15</td>
+                    <td>Meeting Session for All Committees</td>
+                    <td></td>
+                </tr>
+            </table>
+
+            <br>
+
+            <p class = "desc"><i>Wednesday 14<sup>th</sup> July, 2021</i></p>
+            <table class = "table2">
+                <tr>
+                    <td>10:30 - 11:00</td>
+                    <td>STOFF Meeting</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11:00 - 12:00</td>
+                    <td>1<sup>st</sup> Session for All Committees</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12:00 - 12:15</td>
+                    <td>Coffee Break</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12:15 - 13:15</td>
+                    <td>2<sup>nd</sup> Session for All Committees</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>13:15 - 14:00</td>
+                    <td>Lunch Break</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>14:00 - 15:00</td>
+                    <td>3<sup>rd</sup> Session for All Committees</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15:00 - 15:15</td>
+                    <td>Coffee Break</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15:15 - 16:15</td>
+                    <td>4<sup>th</sup> Session for All Committees</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16:15 - 16:30</td>
+                    <td>Coffee Break</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16:30 - 17:30</td>
+                    <td>5<sup>th</sup> Session for All Committees</td>
+                    <td></td>
+                </tr>
+            </table>
+
+            <br>
+
+            <p class = "desc"><i>Thursday 15<sup>th</sup> July, 2021</i></p>
+            <table class = "table3">
+                <tr>
+                    <td>10:30 - 11:00</td>
+                    <td>STOFF Meeting</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11:00 - 12:00</td>
+                    <td>6<sup>th</sup> Session for All Committees</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12:00 - 12:15</td>
+                    <td>Coffee Break</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12:15 - 13:15</td>
+                    <td>7<sup>th</sup> Session for All Committees</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>13:15 - 14:00</td>
+                    <td>Lunch Break</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>14:00 - 15:00</td>
+                    <td>8<sup>th</sup> Session for All Committees</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15:00 - 15:15</td>
+                    <td>Coffee Break</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15:15 - 16:15</td>
+                    <td>9<sup>th</sup> Session for All Committees</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16:15 - 16:30</td>
+                    <td>Coffee Break</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16:30 - 17:30</td>
+                    <td>10<sup>th</sup> Session for All Committees</td>
+                    <td></td>
+                </tr>
+            </table>
+
+            <br>
+
+            <p class = "desc"><i>Friday 16<sup>th</sup> July, 2021</i></p>
+            <table class = "table4">
+                <tr>
+                    <td>10:30 - 11:00</td>
+                    <td>STOFF Meeting</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11:00 - 12:00</td>
+                    <td>11<sup>th</sup> Session for All Committees</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12:00 - 12:15</td>
+                    <td>Coffee Break</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12:15 - 13:15</td>
+                    <td>12<sup>th</sup> Session for All Committees</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>13:15 - 14:00</td>
+                    <td>Lunch Break</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>14:00 - 15:00</td>
+                    <td>1<sup>st</sup> GA Plenary Session / 13<sup>th</sup> Session for Special Committees</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15:00 - 15:15</td>
+                    <td>Coffee Break</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15:15 - 16:15</td>
+                    <td>2<sup>nd</sup> GA Plenary Session / 14<sup>th</sup> Session for Special Committees</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16:15 - 16:45</td>
+                    <td>STOFF Meeting / Coffee Break for Delegates</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16:45 - 17:00</td>
+                    <td>Coffee Break for All</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>17:00 - 18:30</td>
+                    <td>Closing Ceremony</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class = "footerDesktop">
+    <div class = "footer">
+        <!-- Sponsors -->
+        <div class = "sponsors">
+            <h3 style = "text-align: center; color: #fafafa;"><b>SPONSORS</b></h3>
+            <div style = "height: 60px; width: 228px; margin: 0 auto;">
+                <div class = "circle unselectable" style = "margin-left: 36%;"><a href = "https://www.genelseracilik.com/" target = "_blank"><img src = "/res/genel_seracilik.png" style = "width: 90%; margin-left: 5%; margin-top: 2px;"></a></div>
+                <!-- Old sponsors
+                <div class = "circle unselectable"><a href = "http://www.gulermak.com.tr/" target="_blank"><img src = "res/gulermak.png" style = "width: 90%; margin-left: 5%; margin-top: 5px;"></a></div>
+                <div class = "circle unselectable"><a href = "https://duveroglu.business.site/" target = "_blank"><img src = "res/duveroglu.png" style = "width: 90%; margin-left: 5%; margin-top: 2px;"></a></div>
+                <div class = "circle unselectable"><a href = "https://www.teaco.com.tr/" target  ="_blank"><img src = "res/teaco.png" style = "width: 90%; margin-left: 5%; margin-top: 2px;"></a></div>
+                -->
+            </div>
+        </div>
+
+        <!-- Social media -->
+        <div class = "socialMedia">
+            <h3 style = "text-align: center; color: #fafafa;"><b>BHMUN MEDIA</b></h3>
+            <a href = "https://www.instagram.com/bhmun/" target = "_blank"><img class = "socialMediaIcon instagram" src = "https://img.icons8.com/ios/100/fafafa/instagram-new.png"></a>
+            <a href = "https://www.facebook.com/bilkenthistoricalmun/" target = "_blank"><img class = "socialMediaIcon facebook" src = "https://img.icons8.com/ios/100/fafafa/facebook-circled.png"></a>
+            <a href = "https://twitter.com/BHMUN2020" target = "_blank"><img class = "socialMediaIcon twitter" src = "https://img.icons8.com/ios/100/fafafa/twitter-circled.png"></a>
+        </div>
+
+        <!-- Info -->
+        <div class = "address">
+            <h3 style = "margin-top: 8px;"><b>İHSAN DOĞRAMACI FOUNDATION<br>ÖZEL BILKENT HIGH SCHOOL</b></h3>
+            <p class = "addressText">Bilkent University East Campus<br>Çankaya, Ankara, 06800</p>
+        </div>
+    </div>
+
+    <div class = "footer2">
+        <hr style = "width: 90%; margin-left: 5%; height: 2px; background: #5a5a5a; border: none; border-radius: 5px; margin-top: 10px;">
+        <p class = "unselectable" style = "width: 90%; color: #cacaca; margin: 0 auto; text-align: center; font-size: 12px; line-height: 20px; padding-bottom: 10px;">Copyright © 2022 BHMUN | All Rights Reserved</p>
+        <p class = "unselectable" style = "color: #aaaaaa; font-size: 12px; line-height: 20px; padding-bottom: 10px; float: right; margin-top: -30px; margin-right: 5%;"><i>Designed by Alp Afyonluoglu</i></p>
+        <div style = "margin-left: 5%; margin-top: -30px;"><span id = "siteseal"><script async type = "text/javascript" src = "https://seal.godaddy.com/getSeal?sealID=tea0XfQ6JDvvP85Fv4RZNyeglfn9OFeQYCdxWn7jwX2MwPuVCSOh9LK4HJ9b"></script></span></div>
+    </div>
+</div>
+<div class = "footerMobile">
+    <div class = "footer">
+        <!-- Info -->
+        <div class = "address">
+            <h3 style = "margin-top: 8px;"><b>İHSAN DOĞRAMACI FOUNDATION<br>ÖZEL BILKENT HIGH SCHOOL</b></h3>
+            <p class = "addressText">Bilkent University East Campus<br>Çankaya, Ankara, 06800</p>
+        </div>
+
+        <!-- Social media -->
+        <div class = "socialMedia">
+            <h3 style = "text-align: center; color: #fafafa;"><b>BHMUN MEDIA</b></h3>
+            <a href = "https://www.instagram.com/bhmun/" target = "_blank"><img class = "socialMediaIcon instagram" src = "https://img.icons8.com/ios/100/fafafa/instagram-new.png"></a>
+            <a href = "https://www.facebook.com/bilkenthistoricalmun/" target = "_blank"><img class = "socialMediaIcon facebook" src = "https://img.icons8.com/ios/100/fafafa/facebook-circled.png"></a>
+            <a href = "https://twitter.com/BHMUN2020" target = "_blank"><img class = "socialMediaIcon twitter" src = "https://img.icons8.com/ios/100/fafafa/twitter-circled.png"></a>
+        </div>
+
+        <!-- Sponsors -->
+        <div class = "sponsors">
+            <h3 style = "text-align: center; color: #fafafa;"><b>SPONSORS</b></h3>
+            <div style = "height: 60px; width: 228px; margin: 0 auto;">
+                <div class = "circle unselectable" style = "margin-left: 36%;"><a href = "https://www.genelseracilik.com/" target = "_blank"><img src = "/res/genel_seracilik.png" style = "width: 90%; margin-left: 5%; margin-top: 2px;"></a></div>
+                <!-- Old sponsors
+                <div class = "circle unselectable"><a href = "http://www.gulermak.com.tr/" target="_blank"><img src = "res/gulermak.png" style = "width: 90%; margin-left: 5%; margin-top: 5px;"></a></div>
+                <div class = "circle unselectable"><a href = "https://duveroglu.business.site/" target = "_blank"><img src = "res/duveroglu.png" style = "width: 90%; margin-left: 5%; margin-top: 2px;"></a></div>
+                <div class = "circle unselectable"><a href = "https://www.teaco.com.tr/" target  ="_blank"><img src = "res/teaco.png" style = "width: 90%; margin-left: 5%; margin-top: 2px;"></a></div>
+                -->
+            </div>
+        </div>
+    </div>
+
+    <div class = "footer2">
+        <hr style = "width: 70%; margin-left: 15%; height: 2px; background: #5a5a5a; border: none; border-radius: 5px; margin-top: 10px;">
+        <p class = "unselectable" style = "width: 80%; color: #cacaca; margin: 0 auto; text-align: center; font-size: 12px; line-height: 20px; padding-bottom: 10px;">Copyright © 2022 BHMUN | All Rights Reserved</p>
+        <p class = "unselectable" style = "width: 80%; color: #aaaaaa; margin: 0 auto; text-align: center; font-size: 12px; line-height: 20px; padding-bottom: 10px; margin-top: -10px;"><i>Designed by Alp Afyonluoglu</i></p>
+    </div>
+</div>
+<script src = "/js/scripts.js"></script>
+
+</body>
+</html>

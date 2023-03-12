@@ -1,0 +1,107 @@
+/* Navbar underline */
+.underline {
+    margin-left: 220px;
+    width: 110px;
+}
+
+/* Top */
+.content .top {
+    background: url('../res/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 230px;
+    margin-top: -50px;
+
+    padding-top: 1px;
+    background-attachment: fixed;
+}
+
+.content .top .title {
+    font-family: 'Comfortaa', cursive;
+    font-size: 40px;
+    text-align: center;
+
+    line-height: 50px;
+    margin-top: 80px;
+}
+
+@media screen and ( min-width: 960px) {
+    .content .top {
+        background: url('../res/bg.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        width: 100%;
+        height: 350px;
+        margin-top: -50px;
+
+        padding-top: 1px;
+        background-attachment: fixed;
+    }
+
+    .content .top .title {
+        font-family: 'Comfortaa', cursive;
+        font-size: 60px;
+        text-align: center;
+        line-height: 300px;
+
+        margin-top: 30px;
+    }
+}
+
+/* Content */
+.contentM {
+    width: 100%;
+    padding-bottom: 80px;
+    background-color: #FAFAFA;
+    padding-top: 20px;
+    margin-top: -16px;
+    position: relative;
+    z-index: 1;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    box-shadow: 0px 0px 10px 0px rgba( 0.1, 0.1, 0.1, 0.3);
+}
+
+.content .textBox {
+    font-family: arial, sans-serif;
+    font-size: 18px;
+    width: 80%;
+    height: auto;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 28px;
+}
+
+.content .textBox .boxTitle1 {
+    line-height: 25px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 22px;
+    margin-top: 30px;
+    color: #b10006;
+}
+
+.content .textBox .boxTitle2 {
+    line-height: 0px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 22px;
+    color: #1A237E;
+}
+
+.content .textBox .boxText {
+    font-size: 18px;
+}
+
+.content .textBox .seperator {
+    height: 2px;
+    width: 80%;
+    background: #dddddd;
+    border: none;
+    border-radius: 2px;
+    margin-top: 40px;
+}

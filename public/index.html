@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>Bilkent Historical Model United Nations | BHMUN</title>
+    <link rel = "stylesheet" type = "text/css" href = "/css/styles.css">
+    <link rel = "stylesheet" type = "text/css" href = "/css/index.css">
+
+    <meta charset = "UTF-8">
+    <link rel = "icon" href = "/res/bhmun_material.png">
+    <link href = "https://fonts.googleapis.com/css?family=Comfortaa" rel = "stylesheet">
+    <link href = "https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel = "stylesheet">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src = "https://www.googletagmanager.com/gtag/js?id=UA-145106302-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push( arguments); }
+        gtag( 'js', new Date());
+
+        gtag( 'config', 'UA-145106302-1');
+    </script>
+</head>
+
+<body>
+
+<!-- Navbar Desktop -->
+<div class = "navBarDesktop" id = "navBarDesktop">
+    <!-- Navbar Light -->
+    <div class = "navBar navBarLight blurLight unselectable" id = "navBarLight">
+        <a class = "imgLink" style = "cursor: pointer;" href = "/">
+            <img src = "/res/bhmun_b.png" class = "imgIcon unselectable"/>
+        </a>
+
+        <div class = "buttons">
+            <ul>
+                <li class = "btHome button" onmouseover = "showHomeDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/">Home</a>
+                </li>
+                <li class = "btAbout button" onmouseover = "showAboutDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/about">About</a>
+                </li>
+                <li class = "btConference button" onmouseover = "showConferenceDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/conference">Conference</a>
+                </li>
+                <li class = "btCommittees button" onmouseover = "showCommitteesDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/committees">Committees</a>
+                </li>
+                <li class = "btRegistration button" onmouseover = "showRegistrationDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/applications_menu">Applications</a>
+                </li>
+                <li class = "btContact button" onmouseover = "showContactDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/contact">Contact</a>
+                </li>
+                <li class = "btDrive button" onmouseover = "showCloudDropdown()" onmouseout = "hideDropdowns()">
+                    <a class = "aBhmunDrive" href = "/drive">
+                        <img class = "bhmunDriveLogo" src = "/res/icons/cloud.png">
+                    </a>
+                </li>
+
+                <hr class = "underline" id = "underlineLight"/>
+            </ul>
+        </div>
+    </div>
+    <div class = "dropdownMenu dropdownMenuLight" id = "dropdownMenuLight">
+        <div class = "dropdownAbout dropdownContent" onmouseover = "showAboutDropdown()" onmouseout = "hideDropdowns()" id = "dropdownAboutLight">
+            <div class = "dropdownContentTop"></div>
+            <div class = "dropdownContentLinks">
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 0)" onmouseout = "resetUnderlineTopMargin()" href = "/about_bhmun">
+                    BHMUN History
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 1)" onmouseout = "resetUnderlineTopMargin()" href = "http://www.obl.bilkent.edu.tr/index.php/en/">
+                    Özel Bilkent High School
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 2)" onmouseout = "resetUnderlineTopMargin()" href = "/about_ankara">
+                    Bilkent & Ankara
+                </a>
+            </div>
+        </div>
+
+        <div class = "dropdownConference dropdownContent" onmouseover = "showConferenceDropdown()" onmouseout = "hideDropdowns()" id = "dropdownConferenceLight">
+            <div class = "dropdownContentTop"></div>
+            <div class = "dropdownContentLinks">
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 0)" onmouseout = "resetUnderlineTopMargin()" href = "/schedule">
+                    Schedule
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 1)" onmouseout = "resetUnderlineTopMargin()" href = "/organagram">
+                    Organagram
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 2)" onmouseout = "resetUnderlineTopMargin()" href = "/executive_team">
+                    Executive Team
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 3)" onmouseout = "resetUnderlineTopMargin()" href = "/rules_and_procedure">
+                    Harvard Procedures
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 4)" onmouseout = "resetUnderlineTopMargin()" href = "/bhmun_herald">
+                    BHMUN Herald
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 5)" onmouseout = "resetUnderlineTopMargin()" href = "/rules_and_regulations">
+                    Rules & Regulations
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 6)" onmouseout = "resetUnderlineTopMargin()" href = "/drive">
+                    BHMUN Drive
+                </a>
+            </div>
+        </div>
+
+        <div class = "dropdownRegistration dropdownContent"  onmouseover = "showRegistrationDropdown()" onmouseout = "hideDropdowns()" id = "dropdownRegistrationLight">
+            <div class = "dropdownContentTop"></div>
+            <div class = "dropdownContentLinks">
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 0)" onmouseout = "resetUnderlineTopMargin()" href = "/data_protection">
+                    Data Protection
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 1)" onmouseout = "resetUnderlineTopMargin()" href = "/application_overview">
+                    Application Overview
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 2)" onmouseout = "resetUnderlineTopMargin()" href = "/stages_and_deadlines">
+                    Stages & Deadlines
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar Dark -->
+    <div class = "navBar navBarDark blurDark unselectable" id = "navBarDark">
+
+        <div class = "buttons">
+            <ul>
+                <li class = "btHome button" onmouseover = "showHomeDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/">Home</a>
+                </li>
+                <li class = "btAbout button" onmouseover = "showAboutDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/about">About</a>
+                </li>
+                <li class = "btConference button" onmouseover = "showConferenceDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/conference">Conference</a>
+                </li>
+                <li class = "btCommittees button" onmouseover = "showCommitteesDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/committees">Committees</a>
+                </li>
+                <li class = "btRegistration button" onmouseover = "showRegistrationDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/applications_menu">Applications</a>
+                </li>
+                <li class = "btContact button" onmouseover = "showContactDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/contact">Contact</a>
+                </li>
+                <li class = "btDrive button" onmouseover = "showCloudDropdown()" onmouseout = "hideDropdowns()">
+                    <a class = "aBhmunDrive" href = "/drive">
+                        <img class = "bhmunDriveLogo" src = "/res/icons/cloud_w.png">
+                    </a>
+                </li>
+
+                <hr class = "underline" id = "underlineDark"/>
+            </ul>
+        </div>
+    </div>
+    <div class = "dropdownMenu dropdownMenuDark" id = "dropdownMenuDark">
+        <div class = "dropdownAbout dropdownContent" onmouseover = "showAboutDropdown()" onmouseout = "hideDropdowns()" id = "dropdownAboutDark">
+            <div class = "dropdownContentTop"></div>
+            <div class = "dropdownContentLinks">
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 0)" onmouseout = "resetUnderlineTopMargin()" href = "/about_bhmun">
+                    BHMUN History
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 1)" onmouseout = "resetUnderlineTopMargin()" href = "http://www.obl.bilkent.edu.tr/index.php/en/">
+                    Özel Bilkent High School
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 2)" onmouseout = "resetUnderlineTopMargin()" href = "/about_ankara">
+                    Bilkent & Ankara
+                </a>
+            </div>
+        </div>
+
+        <div class = "dropdownConference dropdownContent" onmouseover = "showConferenceDropdown()" onmouseout = "hideDropdowns()" id = "dropdownConferenceDark">
+            <div class = "dropdownContentTop"></div>
+            <div class = "dropdownContentLinks">
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 0)" onmouseout = "resetUnderlineTopMargin()" href = "/schedule">
+                    Schedule
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 1)" onmouseout = "resetUnderlineTopMargin()" href = "/organagram">
+                    Organagram
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 2)" onmouseout = "resetUnderlineTopMargin()" href = "/executive_team">
+                    Executive Team
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 3)" onmouseout = "resetUnderlineTopMargin()" href = "/rules_and_procedure">
+                    Harvard Procedures
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 4)" onmouseout = "resetUnderlineTopMargin()" href = "/bhmun_herald">
+                    BHMUN Herald
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 5)" onmouseout = "resetUnderlineTopMargin()" href = "/rules_and_regulations">
+                    Rules & Regulations
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 6)" onmouseout = "resetUnderlineTopMargin()" href = "/drive">
+                    BHMUN Drive
+                </a>
+            </div>
+        </div>
+
+        <div class = "dropdownRegistration dropdownContent"  onmouseover = "showRegistrationDropdown()" onmouseout = "hideDropdowns()" id = "dropdownRegistrationDark">
+            <div class = "dropdownContentTop"></div>
+            <div class = "dropdownContentLinks">
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 0)" onmouseout = "resetUnderlineTopMargin()" href = "/data_protection">
+                    Data Protection
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 1)" onmouseout = "resetUnderlineTopMargin()" href = "/application_overview">
+                    Application Overview
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 2)" onmouseout = "resetUnderlineTopMargin()" href = "/stages_and_deadlines">
+                    Stages & Deadlines
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Navbar Mobile -->
+<div class = "navBarMobile" id = "navBarMobile">
+    <div class = "mobileBar mobileBarLight blurLight" id = "mobileBarLight">
+        <div class = "mobileTitleAndIcon unselectable">
+            <img class = "imgIconMobile unselectable" src = "/res/bhmun_b.png"/>
+            <h1 class = "mobileTitle">BHMUN</h1>
+        </div>
+        <img class = "mobileMenu" src = "https://img.icons8.com/material-outlined/96/000000/menu.png" onclick="showMobileNavigation()">
+    </div>
+
+    <div class = "mobileBar mobileBarDark blurDark" id = "mobileBarDark">
+        <div class = "mobileTitleAndIcon unselectable">
+            <img class = "imgIconMobile unselectable" src = "/res/bhmun_w.png"/>
+            <h1 class = "mobileTitle">BHMUN</h1>
+        </div>
+        <img class = "mobileMenu" src = "https://img.icons8.com/material-outlined/96/eeeeee/menu.png" onclick="showMobileNavigation()">
+    </div>
+
+    <div class = "mobileNavigation blurLight" id = "mobileNavigation" style = "display: none">
+        <div class = "mobileTitleAndIcon unselectable">
+            <img class = "imgIconMobile unselectable" src = "/res/bhmun_b.png"/>
+            <h1 class = "mobileTitle">BHMUN</h1>
+        </div>
+        <img class = "mobileMenu" src = "https://img.icons8.com/material-rounded/24/000000/delete-sign.png" onclick="hideMobileNavigation()">
+
+        <div class = "mobileNavigationBox">
+            <a class = "mobileNavBarItem" href = "/"><img src = "/res/icons/home.png" class = "mobileNavbarIcon">Home</a>
+            <hr class = "mobileDivider"/>
+            <a class = "mobileNavBarItem" href = "/about"><img src = "/res/icons/about.png" class = "mobileNavbarIcon">About</a>
+            <hr class = "mobileDivider"/>
+            <a class = "mobileNavBarItem" href = "/conference"><img src = "/res/icons/conference.png" class = "mobileNavbarIcon">Conference</a>
+            <hr class = "mobileDivider"/>
+            <a class = "mobileNavBarItem" href = "/committees"><img src = "/res/icons/committees.png" class = "mobileNavbarIcon">Committees</a>
+            <hr class = "mobileDivider"/>
+            <a class = "mobileNavBarItem" href = "/applications_menu"><img src = "/res/icons/feedback.png" class = "mobileNavbarIcon">Applications</a>
+            <hr class = "mobileDivider"/>
+            <a class = "mobileNavBarItem" href = "/contact"><img src = "/res/icons/contact.png" class = "mobileNavbarIcon">Contact</a>
+            <hr class = "mobileDivider"/>
+            <a class = "mobileNavBarItem" href = "/drive"><img src = "/res/icons/cloud.png" class = "mobileNavbarIcon">BHMUN Drive</a>
+        </div>
+    </div>
+</div>
+
+<!-- Trailer Box -->
+<div class = "trailerBox" id = "trailerBox">
+    <div class = "trailerBox2">
+        <video class = "mainVideo" id = "mainVideo" controls controlsList="nodownload" onclick="startStopVideo()">
+            <source src = "/res/BHMUN20_Main_Video.mp4" type = "video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+</div>
+
+<!-- Popup -->
+<div class = "popup" id = "popup" style = "display: none">
+    <div class = "popupBox css-selector">
+        <img class = "closePopup" onclick = "hidePopup()" src = "https://img.icons8.com/material-rounded/24/fafafa/delete-sign.png">
+        <div style = "width: 100%; text-align: center; display: block;">
+            <img class = "popupLogo unselectable " src = "/res/bhmun_w.png"/>
+        </div>
+        <div class="">
+            <p class = "popupTitle"><b>BHMUN <span>'21</span></b></p>
+            <p class = "popupSubTitle shine">Virtual Conference</p>
+        </div>
+        <p class = "popupText"><span class = "popupTextSpan css-selector">13<sup>th</sup> - 16<sup>th</sup> July 2021</span></p>
+
+    </div>
+</div>
+<script src = "/js/index_cookies.js"></script>
+
+<div class = "content" id = "content">
+    <!-- Slideshow photos -->
+    <div style = "background-color: #FAFAFA; width: 100%; height: 100%; position: fixed; z-index: -1;">
+        <div class = "slideshowBackground" id = "slideB">
+            <div class = "slideshowForeground fade unselectable" id = "slideF"></div>
+        </div>
+    </div>
+
+    <div class = "top" id = "pageTop">
+        <a class = "previousSlide unselectable" onclick = "nextSlide(-1)">&#10094;</a>
+        <a class = "nextSlide unselectable" onclick = "nextSlide(1)">&#10095;</a>
+
+        <img src = "/res/slides/home/1.jpeg" class = "cacheImg"/>
+        <img src = "/res/slides/home/2.jpeg" class = "cacheImg"/>
+        <img src = "/res/slides/home/3.jpeg" class = "cacheImg"/>
+        <img src = "/res/slides/home/4.jpeg" class = "cacheImg"/>
+        <img src = "/res/slides/home/5.jpeg" class = "cacheImg"/>
+        <img src = "/res/slides/home/6.jpeg" class = "cacheImg"/>
+        <img src = "/res/slides/home/7.jpeg" class = "cacheImg"/>
+        <img src = "/res/slides/home/8.jpeg" class = "cacheImg"/>
+        <img src = "/res/slides/home/9.jpeg" class = "cacheImg"/>
+        <img src = "/res/slides/home/10.jpeg" class = "cacheImg"/>
+        <img src = "/res/slides/home/11.jpeg" class = "cacheImg"/>
+        <img src = "/res/slides/home/12.jpeg" class = "cacheImg"/>
+        <img src = "/res/slides/home/13.jpeg" class = "cacheImg"/>
+        <img src = "/res/slides/home/14.jpeg" class = "cacheImg"/>
+        <img src = "/res/slides/home/15.jpeg" class = "cacheImg"/>
+        <img src = "/res/slides/home/16.jpeg" class = "cacheImg"/>
+        <img src = "/res/slides/home/17.jpeg" class = "cacheImg"/>
+        <img src = "/res/slides/home/18.jpeg" class = "cacheImg"/>
+        <img src = "/res/slides/home/19.jpeg" class = "cacheImg"/>
+        <img src = "/res/slides/home/20.jpeg" class = "cacheImg"/>
+    </div>
+
+    <div style = "text-align: center; position: fixed; bottom: 10px;" class = "slideControlButtons unselectable">
+        <span class = "dot" onclick = "showSlide(1)">1</span>
+        <span class = "dot" onclick = "showSlide(2)">2</span>
+        <span class = "dot" onclick = "showSlide(3)">3</span>
+        <span class = "dot" onclick = "showSlide(4)">4</span>
+        <span class = "dot" onclick = "showSlide(5)">5</span>
+        <span class = "dot" onclick = "showSlide(6)">6</span>
+        <span class = "dot" onclick = "showSlide(7)">7</span>
+        <span class = "dot" onclick = "showSlide(8)">8</span>
+        <span class = "dot" onclick = "showSlide(9)">9</span>
+        <span class = "dot" onclick = "showSlide(10)">10</span>
+        <span class = "dot" onclick = "showSlide(11)">11</span>
+        <span class = "dot" onclick = "showSlide(12)">12</span>
+        <span class = "dot" onclick = "showSlide(13)">13</span>
+        <span class = "dot" onclick = "showSlide(14)">14</span>
+        <span class = "dot" onclick = "showSlide(15)">15</span>
+        <span class = "dot" onclick = "showSlide(16)">16</span>
+        <span class = "dot" onclick = "showSlide(17)">17</span>
+        <span class = "dot" onclick = "showSlide(18)">18</span>
+        <span class = "dot" onclick = "showSlide(19)">19</span>
+        <span class = "dot" onclick = "showSlide(20)">20</span>
+    </div>
+
+    <!-- Countdown and Title -->
+    <div class = "countdownAndTitleBox">
+        <!-- Title -->
+        <div class = "titleBox unselectable">
+            <img src = "/res/bhmun_w.png" class = "titleIcon unselectable"/>
+            <div style = "display: inline; position: absolute; vertical-align: middle; margin-left: -40px; ">
+                <h1 class = "title">BHMUN <span style = "color: #C62C2C">'21</span></h1>
+                <h3 class = "subTitle"><i>Innovate the future</i></h3>
+            </div>
+        </div>
+
+        <!-- Countdown -->
+        <div class = "countdownBox blurDark">
+            <p class = "countdownMessage" id = "countdownMessage"><i>Thank you for your interest in BHMUN '21. See you in future BHMUN conferences...</i></p>
+            <div id = "countdownT">
+                <div class = "countdown unselectable" id = "countdown">
+                    <div class = "second">
+                        <p class = "textTime" id = "secondP">0</p>
+                        <p class = "subTextTime" id = "secondSP">Seconds</p>
+                    </div>
+                    <div class = "minute">
+                        <p class = "textTime" id = "minuteP">0</p>
+                        <p class = "subTextTime" id = "minuteSP">Minutes</p>
+                    </div>
+                    <div class = "hour">
+                        <p class = "textTime" id = "hourP">0</p>
+                        <p class = "subTextTime" id = "hourSP">Hours</p>
+                    </div>
+                    <div class = "day">
+                        <p class = "textTime" id = "dayP">0</p>
+                        <p class = "subTextTime" id = "daySP">Days</p>
+                    </div>
+                </div>
+                <hr>
+                <h3 class = "date unselectable">Tuesday, 13 July 2021</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class = "letter" id = "letter">
+
+        <!-- Theme and trailer -->
+        <div class = "themeAndTrailerBox">
+            <!-- Theme -->
+            <div class = "theme">
+                <p style = "margin-top: 16px;">Theme: <i>1990 - 1999</i></p>
+            </div>
+
+            <div class = "separator"></div>
+
+            <!-- Trailer -->
+            <div class = "trailer">
+                <p class = "text"> Trailer: &nbsp;</p>
+                <img class = "startTrailer" src = "https://img.icons8.com/ios/100/000000/play-button-circled.png" onclick = "showVideoBox()">
+            </div>
+        </div>
+
+        <!-- Letter -->
+        <h3 class = "title">Invitation Letter</h3>
+        <p class = "textP">On behalf of the Academic and Organisation Teams at İhsan Doğramacı Foundation Özel Bilkent High School, we proudly welcome you to the 6th annual session of Bilkent Historical Model United Nations (BHMUN) conference held in Ankara, Turkey on the campus of Bilkent University.<br><p>
+        <p class = "titleP"><b>Tuesday 13<sup>th</sup> to Friday 16<sup>th</sup> July, 2021</b><br></p>
+        <p class = "textP">Since our first session in 2014, we have been establishing a platform where young innovators can have the opportunity to share their thoughts and ideas, whilst also educating themselves on world affairs, so as to learn to approach worldwide issues from different perspectives. This year, the Academic Team of BHMUN has decided to form both General Assembly and Special Committees held according to the most significant historical events from 1990 - 1999.</p>
+        <p class = "textP">The variety of committees will allow delegates to discuss many world problems from the viewpoints required by their assigned country and role. We ensure you that every committee will offer issues of interest according to this historical decade together with extremely creative ideas. We promise to provide all delegates with interesting and debatable crises in each committee and offer rewarding opportunities that will allow you to ‘Innovate the Future’ in every aspect of the conference.</p>
+        <p class = "textP">Due to the global pandemic, this year’s BHMUN will be held online. However, with the help of our devoted Organisation Team, we affirm that your expectations of our BHMUN conference this year will be surpassed by providing an exceptional experience that will meet your every need from the opening to the closing ceremony.</p>
+        <p class = "textP">BHMUN is the first and only entirely historical Model UN conference in Turkey organised under Harvard procedure. Helping delegates verge upon historical issues from modern perspectives is exclusive to our conference, hence, we believe that BHMUN is a truly unique experience, and it is for this reason that we give great value to the discussions delegates will hold on the contemporary issues that are now considered timeless.</p>
+        <p class = "textP">With all being said, we invite you to join us in BHMUN'21 for an unforgettable and unique experience.</p>
+        <p class = "textP">Welcome!</p>
+        <br>
+
+        <p class = "text pEndDesktop" style = "text-align: center; margin-top: -20px;"><b>
+            SECRETARIAT</b><br>
+            Ahmet Özdemir &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lara Mengü&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; İnci Sevi Kaya<br>
+            &nbsp;Secretary-General &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Deputy Secretary-General&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Secretary-General
+            <br>
+            <br>
+        </p>
+
+        <p class = "textE pEndMobile" style = "margin-top: -20px;"><b>
+            SECRETARIAT<br></b>
+            Ahmet Özdemir (Secretary-General)<br>
+            Lara Mengü (Deputy Secretary-General)<br>
+            İnci Sevi Kaya (Secretary-General)
+        </p>
+
+        <!-- Bhmun Graphic -->
+        <img src = "/res/bh_html.jpg" style = "width: 70%; margin-left: 16%;">
+    </div>
+</div>
+
+<div class = "footerDesktop">
+    <div class = "footer">
+        <!-- Sponsors -->
+        <div class = "sponsors">
+            <h3 style = "text-align: center; color: #fafafa;"><b>SPONSORS</b></h3>
+            <div style = "height: 60px; width: 228px; margin: 0 auto;">
+                <div class = "circle unselectable" style = "margin-left: 36%;"><a href = "https://www.genelseracilik.com/" target = "_blank"><img src = "/res/genel_seracilik.png" style = "width: 90%; margin-left: 5%; margin-top: 2px;"></a></div>
+                <!-- Old sponsors
+                <div class = "circle unselectable"><a href = "http://www.gulermak.com.tr/" target="_blank"><img src = "res/gulermak.png" style = "width: 90%; margin-left: 5%; margin-top: 5px;"></a></div>
+                <div class = "circle unselectable"><a href = "https://duveroglu.business.site/" target = "_blank"><img src = "res/duveroglu.png" style = "width: 90%; margin-left: 5%; margin-top: 2px;"></a></div>
+                <div class = "circle unselectable"><a href = "https://www.teaco.com.tr/" target  ="_blank"><img src = "res/teaco.png" style = "width: 90%; margin-left: 5%; margin-top: 2px;"></a></div>
+                -->
+            </div>
+        </div>
+
+        <!-- Social media -->
+        <div class = "socialMedia">
+            <h3 style = "text-align: center; color: #fafafa;"><b>BHMUN MEDIA</b></h3>
+            <a href = "https://www.instagram.com/bhmun/" target = "_blank"><img class = "socialMediaIcon instagram" src = "https://img.icons8.com/ios/100/fafafa/instagram-new.png"></a>
+            <a href = "https://www.facebook.com/bilkenthistoricalmun/" target = "_blank"><img class = "socialMediaIcon facebook" src = "https://img.icons8.com/ios/100/fafafa/facebook-circled.png"></a>
+            <a href = "https://twitter.com/BHMUN2020" target = "_blank"><img class = "socialMediaIcon twitter" src = "https://img.icons8.com/ios/100/fafafa/twitter-circled.png"></a>
+        </div>
+
+        <!-- Info -->
+        <div class = "address">
+            <h3 style = "margin-top: 8px;"><b>İHSAN DOĞRAMACI FOUNDATION<br>ÖZEL BILKENT HIGH SCHOOL</b></h3>
+            <p class = "addressText">Bilkent University East Campus<br>Çankaya, Ankara, 06800</p>
+        </div>
+    </div>
+
+    <div class = "footer2">
+        <hr style = "width: 90%; margin-left: 5%; height: 2px; background: #5a5a5a; border: none; border-radius: 5px; margin-top: 10px;">
+        <p class = "unselectable" style = "width: 90%; color: #cacaca; margin: 0 auto; text-align: center; font-size: 12px; line-height: 20px; padding-bottom: 10px;">Copyright © 2022 BHMUN | All Rights Reserved</p>
+        <p class = "unselectable" style = "color: #aaaaaa; font-size: 12px; line-height: 20px; padding-bottom: 10px; float: right; margin-top: -30px; margin-right: 5%;"><i>Designed by Alp Afyonluoglu</i></p>
+        <div style = "margin-left: 5%; margin-top: -30px;"><span id = "siteseal"><script async type = "text/javascript" src = "https://seal.godaddy.com/getSeal?sealID=tea0XfQ6JDvvP85Fv4RZNyeglfn9OFeQYCdxWn7jwX2MwPuVCSOh9LK4HJ9b"></script></span></div>
+    </div>
+</div>
+<div class = "footerMobile">
+    <div class = "footer">
+        <!-- Info -->
+        <div class = "address">
+            <h3 style = "margin-top: 8px;"><b>İHSAN DOĞRAMACI FOUNDATION<br>ÖZEL BILKENT HIGH SCHOOL</b></h3>
+            <p class = "addressText">Bilkent University East Campus<br>Çankaya, Ankara, 06800</p>
+        </div>
+
+        <!-- Social media -->
+        <div class = "socialMedia">
+            <h3 style = "text-align: center; color: #fafafa;"><b>BHMUN MEDIA</b></h3>
+            <a href = "https://www.instagram.com/bhmun/" target = "_blank"><img class = "socialMediaIcon instagram" src = "https://img.icons8.com/ios/100/fafafa/instagram-new.png"></a>
+            <a href = "https://www.facebook.com/bilkenthistoricalmun/" target = "_blank"><img class = "socialMediaIcon facebook" src = "https://img.icons8.com/ios/100/fafafa/facebook-circled.png"></a>
+            <a href = "https://twitter.com/BHMUN2020" target = "_blank"><img class = "socialMediaIcon twitter" src = "https://img.icons8.com/ios/100/fafafa/twitter-circled.png"></a>
+        </div>
+
+        <!-- Sponsors -->
+        <div class = "sponsors">
+            <h3 style = "text-align: center; color: #fafafa;"><b>SPONSORS</b></h3>
+            <div style = "height: 60px; width: 228px; margin: 0 auto;">
+                <div class = "circle unselectable" style = "margin-left: 36%;"><a href = "https://www.genelseracilik.com/" target = "_blank"><img src = "/res/genel_seracilik.png" style = "width: 90%; margin-left: 5%; margin-top: 2px;"></a></div>
+                <!-- Old sponsors
+                <div class = "circle unselectable"><a href = "http://www.gulermak.com.tr/" target="_blank"><img src = "res/gulermak.png" style = "width: 90%; margin-left: 5%; margin-top: 5px;"></a></div>
+                <div class = "circle unselectable"><a href = "https://duveroglu.business.site/" target = "_blank"><img src = "res/duveroglu.png" style = "width: 90%; margin-left: 5%; margin-top: 2px;"></a></div>
+                <div class = "circle unselectable"><a href = "https://www.teaco.com.tr/" target  ="_blank"><img src = "res/teaco.png" style = "width: 90%; margin-left: 5%; margin-top: 2px;"></a></div>
+                -->
+            </div>
+        </div>
+    </div>
+
+    <div class = "footer2">
+        <hr style = "width: 70%; margin-left: 15%; height: 2px; background: #5a5a5a; border: none; border-radius: 5px; margin-top: 10px;">
+        <p class = "unselectable" style = "width: 80%; color: #cacaca; margin: 0 auto; text-align: center; font-size: 12px; line-height: 20px; padding-bottom: 10px;">Copyright © 2022 BHMUN | All Rights Reserved</p>
+        <p class = "unselectable" style = "width: 80%; color: #aaaaaa; margin: 0 auto; text-align: center; font-size: 12px; line-height: 20px; padding-bottom: 10px; margin-top: -10px;"><i>Designed by Alp Afyonluoglu</i></p>
+    </div>
+</div>
+<script src = "/js/scripts.js"></script>
+
+<script src = "/js/index.js"></script>
+</body>
+</html>

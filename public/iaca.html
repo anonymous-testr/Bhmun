@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>JCC: Intelligence Agencies' Summit on Afghanistan (IASA) | BHMUN</title>
+    <link rel = "stylesheet" type = "text/css" href = "/css/styles.css">
+    <link rel = "stylesheet" type = "text/css" href = "/css/committees_sub.css">
+
+    <meta charset = "UTF-8">
+    <link rel = "icon" href = "/res/bhmun_material.png">
+    <link href = "https://fonts.googleapis.com/css?family=Comfortaa" rel = "stylesheet">
+    <link href = "https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel = "stylesheet">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src = "https://www.googletagmanager.com/gtag/js?id=UA-145106302-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push( arguments); }
+        gtag( 'js', new Date());
+
+        gtag( 'config', 'UA-145106302-1');
+    </script>
+</head>
+<body>
+
+<!-- Navbar Desktop -->
+<div class = "navBarDesktop" id = "navBarDesktop">
+    <!-- Navbar Light -->
+    <div class = "navBar navBarLight blurLight unselectable" id = "navBarLight">
+        <a class = "imgLink" style = "cursor: pointer;" href = "/">
+            <img src = "/res/bhmun_b.png" class = "imgIcon unselectable"/>
+        </a>
+
+        <div class = "buttons">
+            <ul>
+                <li class = "btHome button" onmouseover = "showHomeDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/">Home</a>
+                </li>
+                <li class = "btAbout button" onmouseover = "showAboutDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/about">About</a>
+                </li>
+                <li class = "btConference button" onmouseover = "showConferenceDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/conference">Conference</a>
+                </li>
+                <li class = "btCommittees button" onmouseover = "showCommitteesDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/committees">Committees</a>
+                </li>
+                <li class = "btRegistration button" onmouseover = "showRegistrationDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/applications_menu">Applications</a>
+                </li>
+                <li class = "btContact button" onmouseover = "showContactDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/contact">Contact</a>
+                </li>
+                <li class = "btDrive button" onmouseover = "showCloudDropdown()" onmouseout = "hideDropdowns()">
+                    <a class = "aBhmunDrive" href = "/drive">
+                        <img class = "bhmunDriveLogo" src = "/res/icons/cloud.png">
+                    </a>
+                </li>
+
+                <hr class = "underline" id = "underlineLight"/>
+            </ul>
+        </div>
+    </div>
+    <div class = "dropdownMenu dropdownMenuLight" id = "dropdownMenuLight">
+        <div class = "dropdownAbout dropdownContent" onmouseover = "showAboutDropdown()" onmouseout = "hideDropdowns()" id = "dropdownAboutLight">
+            <div class = "dropdownContentTop"></div>
+            <div class = "dropdownContentLinks">
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 0)" onmouseout = "resetUnderlineTopMargin()" href = "/about_bhmun">
+                    BHMUN History
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 1)" onmouseout = "resetUnderlineTopMargin()" href = "http://www.obl.bilkent.edu.tr/index.php/en/">
+                    Özel Bilkent High School
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 2)" onmouseout = "resetUnderlineTopMargin()" href = "/about_ankara">
+                    Bilkent & Ankara
+                </a>
+            </div>
+        </div>
+
+        <div class = "dropdownConference dropdownContent" onmouseover = "showConferenceDropdown()" onmouseout = "hideDropdowns()" id = "dropdownConferenceLight">
+            <div class = "dropdownContentTop"></div>
+            <div class = "dropdownContentLinks">
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 0)" onmouseout = "resetUnderlineTopMargin()" href = "/schedule">
+                    Schedule
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 1)" onmouseout = "resetUnderlineTopMargin()" href = "/organagram">
+                    Organagram
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 2)" onmouseout = "resetUnderlineTopMargin()" href = "/executive_team">
+                    Executive Team
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 3)" onmouseout = "resetUnderlineTopMargin()" href = "/rules_and_procedure">
+                    Harvard Procedures
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 4)" onmouseout = "resetUnderlineTopMargin()" href = "/bhmun_herald">
+                    BHMUN Herald
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 5)" onmouseout = "resetUnderlineTopMargin()" href = "/rules_and_regulations">
+                    Rules & Regulations
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 6)" onmouseout = "resetUnderlineTopMargin()" href = "/drive">
+                    BHMUN Drive
+                </a>
+            </div>
+        </div>
+
+        <div class = "dropdownRegistration dropdownContent"  onmouseover = "showRegistrationDropdown()" onmouseout = "hideDropdowns()" id = "dropdownRegistrationLight">
+            <div class = "dropdownContentTop"></div>
+            <div class = "dropdownContentLinks">
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 0)" onmouseout = "resetUnderlineTopMargin()" href = "/data_protection">
+                    Data Protection
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 1)" onmouseout = "resetUnderlineTopMargin()" href = "/application_overview">
+                    Application Overview
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 2)" onmouseout = "resetUnderlineTopMargin()" href = "/stages_and_deadlines">
+                    Stages & Deadlines
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Navbar Mobile -->
+<div class = "navBarMobile" id = "navBarMobile">
+    <div class = "mobileBar mobileBarLight blurLight" id = "mobileBarLight">
+        <div class = "mobileTitleAndIcon unselectable">
+            <img class = "imgIconMobile unselectable" src = "/res/bhmun_b.png"/>
+            <h1 class = "mobileTitle">BHMUN</h1>
+        </div>
+        <img class = "mobileMenu" src = "https://img.icons8.com/material-outlined/96/000000/menu.png" onclick="showMobileNavigation()">
+    </div>
+
+    <div class = "mobileNavigation blurLight" id = "mobileNavigation" style = "display: none">
+        <div class = "mobileTitleAndIcon unselectable">
+            <img class = "imgIconMobile unselectable" src = "/res/bhmun_b.png"/>
+            <h1 class = "mobileTitle">BHMUN</h1>
+        </div>
+        <img class = "mobileMenu" src = "https://img.icons8.com/material-rounded/24/000000/delete-sign.png" onclick="hideMobileNavigation()">
+
+        <div class = "mobileNavigationBox">
+            <a class = "mobileNavBarItem" href = "/"><img src = "/res/icons/home.png" class = "mobileNavbarIcon">Home</a>
+            <hr class = "mobileDivider"/>
+            <a class = "mobileNavBarItem" href = "/about"><img src = "/res/icons/about.png" class = "mobileNavbarIcon">About</a>
+            <hr class = "mobileDivider"/>
+            <a class = "mobileNavBarItem" href = "/conference"><img src = "/res/icons/conference.png" class = "mobileNavbarIcon">Conference</a>
+            <hr class = "mobileDivider"/>
+            <a class = "mobileNavBarItem" href = "/committees"><img src = "/res/icons/committees.png" class = "mobileNavbarIcon">Committees</a>
+            <hr class = "mobileDivider"/>
+            <a class = "mobileNavBarItem" href = "/applications_menu"><img src = "/res/icons/feedback.png" class = "mobileNavbarIcon">Applications</a>
+            <hr class = "mobileDivider"/>
+            <a class = "mobileNavBarItem" href = "/contact"><img src = "/res/icons/contact.png" class = "mobileNavbarIcon">Contact</a>
+            <hr class = "mobileDivider"/>
+            <a class = "mobileNavBarItem" href = "/drive"><img src = "/res/icons/cloud.png" class = "mobileNavbarIcon">BHMUN Drive</a>
+        </div>
+    </div>
+</div>
+
+<div class = "content">
+    <div class = "top unselectable">
+        <h1 class = "title">Committees & Agenda Items</h1>
+    </div>
+
+    <div class = "contentM">
+        <div class = "textBox">
+            <p class = "textIn boxTitle" style = "color: #b10006"><b>JCC: Intelligence Agencies' Summit on Afghanistan (IASA)</b></p>
+            <p class = "textIn"><b>Agenda items:</b> The Post-War Situation in Afghanistan and the Insurance of Peace and Stability in the Region</p>
+            <p class = "textIn"><b>Year:</b> 1990</p>
+            <p class = "textIn"><b>USG and President Chair:</b> Mohammad Ruzain Bin Ismail</p>
+            <p class = "textIn"><b>Study Guide:</b> <a class = "link" href="/docs/SG21/IASA_Study_Guide.pdf" target="_blank">Click here</a></p>
+            <p class = "textIn"><b>Description:</b></p>
+            <p class = "textInP">The year is 1990. Afghanistan has been at war for a very long time. It was at first invaded by the Soviets and then the unstable situation turned into a war in which the Americans supported one side and the Soviets the other. Until the Soviets decided to withdraw from the country, the war did not seem to be even close to ending. However, following the withdrawal of the Soviets from Afghanistan, foreign interference especially with intelligence agencies seems to have increased. The number of foreign soldiers is decreasing in Afghanistan day by day; however, because of the instability of the region, foreign intelligence has become very important. The intelligence agencies of different nations aim to gain as much information as possible upon what is actually going on on the ground in Afghanistan. They are also always ready to report any suspicious activity to their homeland. In case there will be an important update in Afghanistan, the armies that are withdrawing might need to come back. However, the primary goal must be to stabilize the region and ensure peace and security. But the problem is that the interpretation of "peace and stability" varies from country to country. Therefore, the representatives of intelligence agencies need to negotiate with other representatives and decide upon the future of Afghanistan.</p>
+            <p class = "textInP">Now, it is up to the Representatives of Intelligence Agencies to decide upon what they are going to do: Follow the path of history or draw a path of their own. The performance of the representatives will shape the flow of the committee, and the BHMUN'20 Team will shape their crises in accordance with the flow.</p>
+
+            <p class = "textIn"><b>Country list:</b></p>
+            <p class = "textIn">
+                <span style = "color: #1A237E;"><b>1.</b></span> CIA (Central Intelligence Agency) - United States of America (USA)<br>
+                <span style = "color: #1A237E;"><b>2.</b></span> KGB (Komitet Gosudarstvennoy Bezopasnosti) - (Committee for State Security)- Union of Soviet Socialist Republics (USSR)<br>
+                <span style = "color: #1A237E;"><b>3.</b></span> MI6 (Secret Intelligence Service) - United Kingdom of Great Britain and Northern Ireland (UK)<br>
+                <span style = "color: #1A237E;"><b>4.</b></span> DGSE (Direction Générale de la Sécurité Extérieure) - (Directorate-General for External Security) – French Republic<br>
+                <span style = "color: #1A237E;"><b>5.</b></span> MSS (Zhōnghuá Rénmín Gònghéguó Guójiā Ānquán Bù) - (Ministry of State Security) - People’s Republic of China (PRC)<br>
+                <span style = "color: #1A237E;"><b>6.</b></span> Ministry of Defense - Islamic Republic of Afghanistan<br>
+                <span style = "color: #1A237E;"><b>7.</b></span> R&AW (Anusandhān aur Viślēṣaṇ Viṅg) - (Research and Analysis Wing) - Republic of India<br>
+                <span style = "color: #1A237E;"><b>8.</b></span> ISI (Inter-Services Intelligence) – Islamic Republic of Pakistan<br>
+                <span style = "color: #1A237E;"><b>9.</b></span> MIT (Milli İstihbarat Teşkilatı) - (National Intelligence Organization) – Republic of Turkey<br>
+                <span style = "color: #1A237E;"><b>10.</b></span> MOIS (Vezarat-e Ettela'at Jomhuri-ye Eslami-ye Iran) - (Ministry of Intelligence of the Islamic Republic of Iran) – Islamic Republic of Iran<br>
+                <span style = "color: #1A237E;"><b>11.</b></span> GIP (Ri'āsat Al-Istikhbārāt Al-'Āmah) - (General Intelligence Presidency) - Kingdom of Saudi Arabia<br>
+                <span style = "color: #1A237E;"><b>12.</b></span> Mossad (al-Mōsād) - (The Institute for Intelligence and Special Operations) - State of Israel<br>
+                <span style = "color: #1A237E;"><b>13.</b></span> WSW (Wojskowa Służba Wewnętrzna) - (Internal Military Service) - Republic of Poland<br>
+                <span style = "color: #1A237E;"><b>14.</b></span> SRI (Serviciul Român de Informații) - (Romanian Intelligence Service) -Republic of Romania<br>
+                <span style = "color: #1A237E;"><b>15.</b></span> ŠtB (Státní bezpečnost) (State Security) - Czechoslovakia<br>
+                <span style = "color: #1A237E;"><b>16.</b></span> SDS (Služba Državne Sigurnosti) - (State Security Service) - Socialist Federal Republic of Yugoslavia<br>
+                <span style = "color: #1A237E;"><b>17.</b></span> CSIS (Canadian Security Intelligence Service) - Dominion of Canada<br>
+                <span style = "color: #1A237E;"><b>18.</b></span> SID (Servizio Informazioni Difesa) - (Military Intelligence and Security Service) - Italian Republic<br>
+                <span style = "color: #1A237E;"><b>19.</b></span> NIS (Ethnikí Ypiresía Pliroforión) - (National Intelligence Service) - Hellenic Republic (Greece)<br>
+                <span style = "color: #1A237E;"><b>20.</b></span> KDS (Komitet za Dǎržavna Sigurnost) - (Committee for State Security) – People’s Republic of Bulgaria<br>
+                <span style = "color: #1A237E;"><b>21.</b></span> BND (Bundesnachrichtendienst) - (Federal Intelligence Service) - Federal Republic of Germany (West Germany)<br>
+                <span style = "color: #1A237E;"><b>22.</b></span> MfS (Ministerium für Staatssicherheit) - (State Security Service) – German Democratic Republic (East Germany)<br>
+                <span style = "color: #1A237E;"><b>23.</b></span> GID (Gihaz El Mukhabarat El ‘Amma) - (General Intelligence Directorate) - Arab Republic of Egypt
+            </p>
+        </div>
+    </div>
+
+    <div id = "sidebar" >
+        <div class = "sidebar">
+            <a href = "/committees"><div class = "sidebarItem"><p class = "sidebarItemText"><img src = "/res/icons/undo_w.png" style = "height: 15px; display: inline-block; position: relative; "> COMMITTEES</p></div></a>
+            <a href = "/ga1_disec"><div class = "sidebarItem"><p class = "sidebarItemText">GA1 DISEC</p></div></a>
+            <a href = "/ga3_sochum"><div class = "sidebarItem"><p class = "sidebarItemText">GA3 SOCHUM</p></div></a>
+            <a href = "/unsc"><div class = "sidebarItem"><p class = "sidebarItemText">UNSC</p></div></a>
+            <a href = "/hssg"><div class = "sidebarItem"><p class = "sidebarItemText">HSSG</p></div></a>
+            <a href = "/iaca"><div class = "sidebarItem"><p class = "sidebarItemText">IASA</p></div></a>
+        </div>
+    </div>
+</div>
+
+<script src = "/js/scripts.js"></script>
+
+<script type = "text/javascript" src = "/js/jquery.js"></script>
+<script type = "text/javascript">
+    $(function() {
+        var offset = $("#sidebar").offset();
+        var topPadding = 15;
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > offset.top) {
+                $("#sidebar").stop().animate({
+                    marginTop: $(window).scrollTop() - offset.top + topPadding
+                });
+            } else {
+                $("#sidebar").stop().animate({
+                    marginTop: 0
+                });
+            };
+        });
+    });
+</script>
+</body>
+</html>
