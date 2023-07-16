@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "bilkent-web"
+  },
+  "targets": {
+    "bilkent-web": {
+      "hosting": {
+        "bhmun": [
+          "bhmun-web"
+        ]
+      }
+    }
   }
 }
