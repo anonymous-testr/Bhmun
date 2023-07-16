@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <title>BHMUN</title>
+  <link rel = "stylesheet" type = "text/css" href = "/css/styles.css">
+  <link rel = "stylesheet" type = "text/css" href = "/css/error.css">
+
+  <meta charset = "UTF-8">
+  <link rel = "icon" href = "https://www.bhmun.org/res/bhmun_material.png">
+  <link href = "https://fonts.googleapis.com/css?family=Comfortaa" rel = "stylesheet">
+  <link href = "https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel = "stylesheet">
+  <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src = "https://www.googletagmanager.com/gtag/js?id=UA-145106302-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push( arguments); }
+    gtag( 'js', new Date());
+
+    gtag( 'config', 'UA-145106302-1');
+  </script>
+</head>
+<body>
+
+UUDDLRLRBA
+
+<script> // https://stackoverflow.com/questions/31626852/
+    function onKonamiCode(cb) {
+        var input = '';
+        var key = '38384040373937396665';
+        document.addEventListener('keydown', function (e) {
+            input += ("" + e.keyCode);
+            if (input === key) {
+                return cb();
+            }
+            if (!key.indexOf(input)) return;
+            input = ("" + e.keyCode);
+        });
+    }
+    onKonamiCode(function () {alert('You found it...')})
+</script>
+
+</body>
+</html>
