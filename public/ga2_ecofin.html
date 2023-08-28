@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>GA1: Disarmament and International Security Committee (DISEC) | BHMUN</title>
+    <link rel = "stylesheet" type = "text/css" href = "/css/styles.css">
+    <link rel = "stylesheet" type = "text/css" href = "/css/committees_sub.css">
+
+    <meta charset = "UTF-8">
+    <link rel = "icon" href = "/res/bhmun_material.png">
+    <link href = "https://fonts.googleapis.com/css?family=Comfortaa" rel = "stylesheet">
+    <link href = "https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel = "stylesheet">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src = "https://www.googletagmanager.com/gtag/js?id=UA-145106302-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push( arguments); }
+        gtag( 'js', new Date());
+
+        gtag( 'config', 'UA-145106302-1');
+    </script>
+</head>
+<body>
+
+<!-- Navbar Desktop -->
+<div class = "navBarDesktop" id = "navBarDesktop">
+    <!-- Navbar Light -->
+    <div class = "navBar navBarLight blurLight unselectable" id = "navBarLight">
+        <a class = "imgLink" style = "cursor: pointer;" href = "/">
+            <img src = "/res/bhmun_b.png" class = "imgIcon unselectable"/>
+        </a>
+
+        <div class = "buttons">
+            <ul>
+                <li class = "btHome button" onmouseover = "showHomeDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/">Home</a>
+                </li>
+                <li class = "btAbout button" onmouseover = "showAboutDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/about">About</a>
+                </li>
+                <li class = "btConference button" onmouseover = "showConferenceDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/conference">Conference</a>
+                </li>
+                <li class = "btCommittees button" onmouseover = "showCommitteesDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/committees">Committees</a>
+                </li>
+                <li class = "btRegistration button" onmouseover = "showRegistrationDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/applications_menu">Applications</a>
+                </li>
+                <li class = "btContact button" onmouseover = "showContactDropdown()" onmouseout = "hideDropdowns()">
+                    <a href = "/contact">Contact</a>
+                </li>
+                <li class = "btDrive button" onmouseover = "showCloudDropdown()" onmouseout = "hideDropdowns()">
+                    <a class = "aBhmunDrive" href = "/drive">
+                        <img class = "bhmunDriveLogo" src = "/res/icons/cloud.png">
+                    </a>
+                </li>
+
+                <hr class = "underline" id = "underlineLight"/>
+            </ul>
+        </div>
+    </div>
+    <div class = "dropdownMenu dropdownMenuLight" id = "dropdownMenuLight">
+        <div class = "dropdownAbout dropdownContent" onmouseover = "showAboutDropdown()" onmouseout = "hideDropdowns()" id = "dropdownAboutLight">
+            <div class = "dropdownContentTop"></div>
+            <div class = "dropdownContentLinks">
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 0)" onmouseout = "resetUnderlineTopMargin()" href = "/about_bhmun">
+                    BHMUN History
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 1)" onmouseout = "resetUnderlineTopMargin()" href = "http://www.obl.bilkent.edu.tr/index.php/en/">
+                    Özel Bilkent High School
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 2)" onmouseout = "resetUnderlineTopMargin()" href = "/about_ankara">
+                    Bilkent & Ankara
+                </a>
+            </div>
+        </div>
+
+        <div class = "dropdownConference dropdownContent" onmouseover = "showConferenceDropdown()" onmouseout = "hideDropdowns()" id = "dropdownConferenceLight">
+            <div class = "dropdownContentTop"></div>
+            <div class = "dropdownContentLinks">
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 0)" onmouseout = "resetUnderlineTopMargin()" href = "/schedule">
+                    Schedule
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 1)" onmouseout = "resetUnderlineTopMargin()" href = "/organagram">
+                    Organagram
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 2)" onmouseout = "resetUnderlineTopMargin()" href = "/executive_team">
+                    Executive Team
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 3)" onmouseout = "resetUnderlineTopMargin()" href = "/rules_and_procedure">
+                    Harvard Procedures
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 4)" onmouseout = "resetUnderlineTopMargin()" href = "/bhmun_herald">
+                    BHMUN Herald
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 5)" onmouseout = "resetUnderlineTopMargin()" href = "/rules_and_regulations">
+                    Rules & Regulations
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 6)" onmouseout = "resetUnderlineTopMargin()" href = "/drive">
+                    BHMUN Drive
+                </a>
+            </div>
+        </div>
+
+        <div class = "dropdownRegistration dropdownContent"  onmouseover = "showRegistrationDropdown()" onmouseout = "hideDropdowns()" id = "dropdownRegistrationLight">
+            <div class = "dropdownContentTop"></div>
+            <div class = "dropdownContentLinks">
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 0)" onmouseout = "resetUnderlineTopMargin()" href = "/data_protection">
+                    Data Protection
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 1)" onmouseout = "resetUnderlineTopMargin()" href = "/application_overview">
+                    Application Overview
+                </a>
+                <hr class = "divider"/>
+                <a class = "dropdownLink" onmouseover = "underlineTopMargin( 2)" onmouseout = "resetUnderlineTopMargin()" href = "/stages_and_deadlines">
+                    Stages & Deadlines
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Navbar Mobile -->
+<div class = "navBarMobile" id = "navBarMobile">
+    <div class = "mobileBar mobileBarLight blurLight" id = "mobileBarLight">
+        <div class = "mobileTitleAndIcon unselectable">
+            <img class = "imgIconMobile unselectable" src = "/res/bhmun_b.png"/>
+            <h1 class = "mobileTitle">BHMUN</h1>
+        </div>
+        <img class = "mobileMenu" src = "https://img.icons8.com/material-outlined/96/000000/menu.png" onclick="showMobileNavigation()">
+    </div>
+
+    <div class = "mobileNavigation blurLight" id = "mobileNavigation" style = "display: none">
+        <div class = "mobileTitleAndIcon unselectable">
+            <img class = "imgIconMobile unselectable" src = "/res/bhmun_b.png"/>
+            <h1 class = "mobileTitle">BHMUN</h1>
+        </div>
+        <img class = "mobileMenu" src = "https://img.icons8.com/material-rounded/24/000000/delete-sign.png" onclick="hideMobileNavigation()">
+
+        <div class = "mobileNavigationBox">
+            <a class = "mobileNavBarItem" href = "/"><img src = "/res/icons/home.png" class = "mobileNavbarIcon">Home</a>
+            <hr class = "mobileDivider"/>
+            <a class = "mobileNavBarItem" href = "/about"><img src = "/res/icons/about.png" class = "mobileNavbarIcon">About</a>
+            <hr class = "mobileDivider"/>
+            <a class = "mobileNavBarItem" href = "/conference"><img src = "/res/icons/conference.png" class = "mobileNavbarIcon">Conference</a>
+            <hr class = "mobileDivider"/>
+            <a class = "mobileNavBarItem" href = "/committees"><img src = "/res/icons/committees.png" class = "mobileNavbarIcon">Committees</a>
+            <hr class = "mobileDivider"/>
+            <a class = "mobileNavBarItem" href = "/applications_menu"><img src = "/res/icons/feedback.png" class = "mobileNavbarIcon">Applications</a>
+            <hr class = "mobileDivider"/>
+            <a class = "mobileNavBarItem" href = "/contact"><img src = "/res/icons/contact.png" class = "mobileNavbarIcon">Contact</a>
+            <hr class = "mobileDivider"/>
+            <a class = "mobileNavBarItem" href = "/drive"><img src = "/res/icons/cloud.png" class = "mobileNavbarIcon">BHMUN Drive</a>
+        </div>
+    </div>
+</div>
+
+<div class = "content">
+    <div class = "top unselectable">
+        <h1 class = "title">Committees & Agenda Items</h1>
+    </div>
+
+    <div class = "contentM">
+        <div class = "textBox">
+            <p class = "textIn boxTitle" style = "color: #b10006"><b>GA2: Economic and Financial Committee (ECOFIN)</b></p>
+            <p class = "textIn"><b>Agenda items:</b></p>
+            <p class = "textIn">
+                <b><span style = "color: #1A237E;">1.</span></b> Preventing Arms Trade in Yugoslavia<br>
+                <b><span style = "color: #1A237E;">2.</span></b> The Consequences of the NATO Bombing of Serbia/Yugoslavia
+            </p>
+            <p class = "textIn"><b>Year:</b></p>
+            <p class = "textIn">
+                First agenda: 1991<br>
+                Second agenda: 1999
+            </p>
+            <p class = "textIn"><b>USG and President Chair:</b> Ege Korkmaz</p>
+            <p class = "textIn"><b>Study Guide:</b> <a class = "link" href="/docs/SG21/GA1-DISEC_Study_Guide.pdf" target="_blank">Click here</a></p>
+            <p class = "textIn"><b>Description:</b></p>
+            <p class = "textInP">The second committee of the UN General Assembly, DISEC, is the committee of Disarmament and International Security. The delegates of this committee will be meeting in two different years to discuss two different agenda items.</p>
+            <p class = "textInP">First Topic (Preventing Arms Trade in Yugoslavia): It's 1991 and the Balkans are unstable. Yugoslavia, a nation that consists of seven different ethnic groups, is in multiple crises. Nationalism has been rising and it has led to big separatist movements. Some of these separatist groups have gone as far as starting to support the USA, which has been against the Yugoslavian foreign policy ever since its foundation. The biggest and most powerful socialist country in all history, the USSR is currently unstable as well. The Western bloc has been becoming more powerful with time and the Eastern bloc seems to have multiple crises going on. And in case the USSR faces a major crisis or even collapses, it seems like the West will proceed to spread their ideologies and beliefs across the world including Yugoslavia. Unity, for both blocs, is as crucial as it never was. However, Yugoslavia might struggle to be united within itself. Also, due to the fact that the separatist groups in Yugoslavia have gained extensive power, not inviting their representatives to this conference was impossible. Besides the delegation of Yugoslavia, Montenegro, Kosovo, Slovenia, Bosnia and Herzegovina, and Macedonia have pointed out that they will be proud to send their delegations to the meeting of DISEC. These delegations will be attending the conference as observer states. Serbia has refused to send a separate delegate stating that their one and only representative has always been and will always be the delegate of Yugoslavia.</p>
+            <p class = "textInP"><b>IMPORTANT NOTE:</b> The "Observer States" referred to above are states that will preserve the right to participate in each committee discussion but they will not have the right to vote in voting procedures since in 1991, the UN did not recognize them as independent states. However, it must not be forgotten that even though the delegates of these nations will not be able to vote, they have an important role to play in the committee because of the fact that Yugoslavia dissolved in the '90s due to these states' nationalist movements.</p>
+            <p class = "textInP">Second Topic (The Consequences of the NATO Bombing of Serbia/Yugoslavia): It is 1999, NATO has just started bombing Serbia. It has been a couple of minutes, and no detailed information has arrived yet. Throughout the world, it seems like nobody knows what is actually happening in Serbia. The only thing that has been noted to this minute is that if no measures are taken, a vast number of deaths will be inevitable. The World media awaits the reaction and response of DISEC upon the issue.</p>
+            <p class = "textInP">Now, it is up to the delegates to decide upon what they are going to do: Follow the path of history or draw a path of their own. The delegates' performance will shape the flow of the committee and the BHMUN'21 Team will shape their crises in accordance with the flow.</p>
+        </div>
+    </div>
+
+    <div id = "sidebar" >
+        <div class = "sidebar">
+            <a href = "/committees"><div class = "sidebarItem"><p class = "sidebarItemText"><img src = "/res/icons/undo_w.png" style = "height: 15px; display: inline-block; position: relative; "> COMMITTEES</p></div></a>
+            <a href = "/ga1_disec"><div class = "sidebarItem"><p class = "sidebarItemText">GA1 DISEC</p></div></a>
+            <a href = "/ga3_sochum"><div class = "sidebarItem"><p class = "sidebarItemText">GA3 SOCHUM</p></div></a>
+            <a href = "/unsc"><div class = "sidebarItem"><p class = "sidebarItemText">UNSC</p></div></a>
+            <a href = "/hssg"><div class = "sidebarItem"><p class = "sidebarItemText">HSSG</p></div></a>
+            <a href = "/iaca"><div class = "sidebarItem"><p class = "sidebarItemText">IASA</p></div></a>
+        </div>
+    </div>
+</div>
+
+<script src = "/js/scripts.js"></script>
+
+<script type = "text/javascript" src = "/js/jquery.js"></script>
+<script type = "text/javascript">
+    $(function() {
+        var offset = $("#sidebar").offset();
+        var topPadding = 15;
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > offset.top) {
+                $("#sidebar").stop().animate({
+                    marginTop: $(window).scrollTop() - offset.top + topPadding
+                });
+            } else {
+                $("#sidebar").stop().animate({
+                    marginTop: 0
+                });
+            };
+        });
+    });
+</script>
+</body>
+</html>
