@@ -170,8 +170,22 @@
     </div>
 </div>
 
+<div class = "content">
+    <div class = "top unselectable">
+        <h1 class = "titleL">Apply Now</h1>
+    </div>
 
+        <p class = "text"><b>Please click one of the boxes below to make an application:</b></p>
 
+        <br><br>
+        <button class = "btNext" onclick="opendelegate()">Apply as an Individual Delegate</button>
+        <button class = "btNext" onclick="opendelegation()">Apply as a Delegation</button>
+        <button class = "btNext" onclick="openadmin()">Apply as an Admin</button>
+        <button class = "btNext" onclick="openchair()">Apply as a Chair/Co-Chair</button>
+        <button class = "btNext" onclick="openpress()">Apply as a Press Team</button>
+        <button class = "btNext" onclick="opensecurity()">Apply as Security</button>
+    </div>
+</div>
 
 <div class = "footerDesktop">
     <div class = "footer">
@@ -248,6 +262,25 @@
 </div>
 <script src = "/js/scripts.js"></script>
 
-<script src = "/js/index.js"></script>
+<script>
+    function opendelegate() {
+        window.open( "/delegate_application","_self");
+    }
+    function opendelegation() {
+        window.open( "/delegation_application","_self");
+    }
+    function openadmin() {
+        window.open( "/admin_application","_self");
+    }
+    function openchair() {
+        window.open( "/chair_application","_self");
+    }
+    function openpress() {
+        window.open( "/press_application","_self");
+    }
+    function opensecurity() {
+        window.open( "/security_application","_self");
+    }
+</script>
 </body>
 </html>
