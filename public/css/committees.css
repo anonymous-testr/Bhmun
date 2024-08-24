@@ -6,7 +6,6 @@
 
 /* Top */
 .content .top {
-    .content .top {
         background: url('../res/comm24.jpg');
         background-position: center;
         background-size: cover;
@@ -18,7 +17,6 @@
     
         padding-top: 1px;
         background-attachment: fixed;
-    }
 }
 
 .content .top .title {
