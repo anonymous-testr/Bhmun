@@ -6,7 +6,7 @@
 
 /* Top */
 .content .top {
-    background: url('../res/bg.jpg');
+    background: url('../res/comm24.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -30,7 +30,7 @@
 
 @media screen and ( min-width: 960px) {
     .content .top {
-        background: url('../res/bg.jpg');
+        background: url('../res/comm24.jpg');
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
