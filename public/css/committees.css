@@ -8,7 +8,7 @@
 .content .top {
         background: url('../res/comm24.jpg');
         background-position: center;
-        background-size: 5;
+        background-size: cover;
         background-repeat: no-repeat;
     
         width: 100%;
