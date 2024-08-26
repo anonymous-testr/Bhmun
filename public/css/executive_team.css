@@ -142,10 +142,10 @@
 /* Main Content */
 .content .letter {
     width: 100%;
-    padding-bottom: 80px;
+    padding-bottom: 80000px;
     background-color: #FAFAFA;
     padding-top: 20px;
-    margin-top: 50000px;
+    margin-top: -5px;
     position: relative;
     z-index: 1;
     border-top-left-radius: 16px;
