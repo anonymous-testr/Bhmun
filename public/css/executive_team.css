@@ -124,7 +124,7 @@
 @media screen and ( min-width: 990px) {
     .content .titleBox {
         position: fixed;
-        width: 700%;
+        width: 70%;
         margin-left: 15%;
         bottom: 35vh;
         align-items: center;
@@ -146,7 +146,7 @@
     background-color: #FAFAFA;
     padding-top: 20px;
     margin-top: -5px;
-    position: relative;
+    position: fixed;
     z-index: 1;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
