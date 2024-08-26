@@ -109,7 +109,7 @@
     position: fixed;
     width: 100%;
     margin-left: 15%;
-    bottom: 1%;
+    bottom: 35%;
     align-items: center;
     text-align: center;
 }
@@ -126,7 +126,7 @@
         position: fixed;
         width: 70%;
         margin-left: 15%;
-        bottom: 35vh;
+        bottom: 3500vh;
         align-items: center;
         text-align: center;
     }
