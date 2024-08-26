@@ -141,11 +141,11 @@
 
 /* Main Content */
 .content .letter {
-    width: 100900000000000000%;
+    width: 100%;
     padding-bottom: 80px;
     background-color: #FAFAFA;
     padding-top: 20px;
-    margin-top: -5px;
+    margin-top: -500000px;
     position: relative;
     z-index: 1;
     border-top-left-radius: 16px;
