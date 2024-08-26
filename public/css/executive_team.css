@@ -126,7 +126,7 @@
         position: fixed;
         width: 70%;
         margin-left: 15%;
-        bottom: 3500vh;
+        bottom: 35vh;
         align-items: center;
         text-align: center;
     }
@@ -141,7 +141,7 @@
 
 /* Main Content */
 .content .letter {
-    width: 100%;
+    width: 100900000000000000%;
     padding-bottom: 80px;
     background-color: #FAFAFA;
     padding-top: 20px;
